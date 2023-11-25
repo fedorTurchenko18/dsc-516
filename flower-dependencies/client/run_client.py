@@ -15,7 +15,7 @@ if __name__ == '__main__':
     AWS_KEY_PAIR = os.environ['AWS_KEY_PAIR']
 
     cur_abs_path = os.path.abspath('.')
-    DIR = f"{cur_abs_path[:cur_abs_path.find('dsc-515')+len('dsc-516')]}/images_houseware"
+    DIR = f"{cur_abs_path[:cur_abs_path.find('dsc-516')+len('dsc-516')]}/images_houseware"
     VAL_SHARE = 0.25
     LABEL_MODE = 'categorical'
     SEED = 515
