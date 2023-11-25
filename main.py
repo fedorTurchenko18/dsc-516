@@ -115,7 +115,7 @@ if __name__=='__main__':
             fl_server_log_download_response = s3_manager.download_from_s3_bucket(local_file_path=server_local_log_path, object_key=f'{BACKEND}/{strategy}/server_log.log')
             fl_clients_log_download_responses = []
             for instance in flower_clients:
-                fl_client_log_download_response = s3_manager.download_from_s3_bucket(local_file_path=client_local_log_path, object_key=f'{BACKEND}/{strategy}/client_{instance}_log.log')
+                fl_client_log_download_response = s3_manager.download_from_s3_bucket(local_file_path=client_local_log_path, object_key=f'{BACKEND}/{strategy}/client_{instance.replace("-", "_")}_log.log')
                 fl_clients_log_download_responses.append(fl_client_log_download_response)
             try:
                 if 'error' in fl_server_log_download_response:
