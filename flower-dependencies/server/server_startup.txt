@@ -14,4 +14,4 @@ cd dsc-516/flower-dependencies/server
 while read -r package; do
     pip install "$package" --no-cache-dir -q
 done < requirements.txt
-python3 run_server.py --num_rounds=NUM_ROUNDS --data_n=DATA_N --backend=BACKEND --strategy STRATEGY
+python3 run_server.py --num_rounds=NUM_ROUNDS --data_n=DATA_N --backend=BACKEND --bucket=BUCKET --strategy STRATEGY

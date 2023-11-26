@@ -39,6 +39,7 @@ if __name__ == '__main__':
     parser.add_argument('--public_ip', type=str, help='Public IP address of the Server instance', required=True)
     parser.add_argument('--instance_id', type=str, help='ID of the Server instance (required for CPU usage measurement)', required=True)
     parser.add_argument('--strategy', nargs='+', type=str, help='Strategy to initialize Flower Server with (needed here to compose the log file path on s3). Available: "FedAvg", "FedAvgM", "FedAdaGrad", "FedAdam"', required=True)
+    parser.add_argument('--bucket', type=str, help='s3 bucket to upload logs to', required=True)
 
     args = parser.parse_args()
 
@@ -58,6 +59,7 @@ if __name__ == '__main__':
     server_public_ip = args.public_ip
     instance_id = args.instance_id
     strategies = args.strategy
+    bucket_name = args.bucket
 
     train, test = keras.utils.image_dataset_from_directory(
         DIR,
@@ -125,5 +127,5 @@ if __name__ == '__main__':
         
         logger.info(f'Writing {log_file} to s3')
         # save FL log to s3
-        write_to_s3_bucket_response = s3_manager.write_to_s3_bucket(log_file=log_file, object_key=f'{backend}/{strategy_str}/client_{instance_id.replace("-", "_")}_log.log')
+        write_to_s3_bucket_response = s3_manager.write_to_s3_bucket(log_file=log_file, object_key=f'{backend}/{strategy_str}/client_{instance_id.replace("-", "_")}_log.log', bucket_name=bucket_name)
         logger.info(write_to_s3_bucket_response)

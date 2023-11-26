@@ -25,6 +25,20 @@ if __name__=='__main__':
     AWS_REGION = os.environ['AWS_REGION']
     AWS_KEY_PAIR = os.environ['AWS_KEY_PAIR']
 
+    parser = argparse.ArgumentParser(description='Run Flower Server')
+    parser.add_argument('--num_rounds', type=int, help='Number of Federated Learning rounds to run', required=True)
+    parser.add_argument('--data_n', type=int, help='Number of Clients to wait for', required=True)
+    parser.add_argument('--strategy', nargs='+', type=str, help='Strategy to initialize Flower Server with. Available: "FedAvg", "FedAvgM", "FedAdaGrad", "FedAdam"', required=True)
+    parser.add_argument('--backend', type=str, help='Backend of Flower Client (needed here to compose the log file path on s3). Available: "jax", "torch", "tensorflow"', required=True)
+    parser.add_argument('--bucket', type=str, help='s3 bucket to upload logs to', required=True)
+
+    args = parser.parse_args()
+    data_n = args.data_n
+    strategies = args.strategy
+    backend = args.backend
+    num_rounds = args.num_rounds
+    bucket_name = args.bucket
+
     # create s3 bucket for Flower logs storage
     s3_manager = AWSManager(
         service='s3',
@@ -34,19 +48,7 @@ if __name__=='__main__':
         aws_region=AWS_REGION,
         aws_key_pair=AWS_KEY_PAIR
     )
-    s3_create_bucket_response = s3_manager.create_s3_bucket()
-
-    parser = argparse.ArgumentParser(description='Run Flower Server')
-    parser.add_argument('--num_rounds', type=int, help='Number of Federated Learning rounds to run', required=True)
-    parser.add_argument('--data_n', type=int, help='Number of Clients to wait for', required=True)
-    parser.add_argument('--strategy', nargs='+', type=str, help='Strategy to initialize Flower Server with. Available: "FedAvg", "FedAvgM", "FedAdaGrad", "FedAdam"', required=True)
-    parser.add_argument('--backend', type=str, help='Backend of Flower Client (needed here to compose the log file path on s3). Available: "jax", "torch", "tensorflow"', required=True)
-
-    args = parser.parse_args()
-    data_n = args.data_n
-    strategies = args.strategy
-    backend = args.backend
-    num_rounds = args.num_rounds
+    s3_create_bucket_response = s3_manager.create_s3_bucket(bucket_name=bucket_name)
 
     _, test = keras.utils.image_dataset_from_directory(
         DIR,
@@ -102,4 +104,4 @@ if __name__=='__main__':
 
         logger.info(f'Writing {log_file} to s3')
         # save FL log to s3
-        write_to_s3_bucket_response = s3_manager.write_to_s3_bucket(log_file=log_file, object_key=f'{backend}/{strategy_str}/server_log.log')
+        write_to_s3_bucket_response = s3_manager.write_to_s3_bucket(log_file=log_file, object_key=f'{backend}/{strategy_str}/server_log.log', bucket_name=bucket_name)

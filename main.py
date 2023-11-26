@@ -1,4 +1,4 @@
-import os, argparse, time
+import os, argparse, time, uuid
 from dotenv import load_dotenv
 from aws_management.aws_manager import AWSManager
 from loguru import logger
@@ -11,6 +11,7 @@ if __name__=='__main__':
     AWS_SESSION_TOKEN = os.environ['AWS_LAB_SESSION_TOKEN']
     AWS_REGION = os.environ['AWS_REGION']
     AWS_KEY_PAIR = os.environ['AWS_KEY_PAIR']
+    BUCKET_NAME = str(uuid.uuid4())
 
     parser = argparse.ArgumentParser(description='Run Flower client with subset of data')
     parser.add_argument('--n_client_instances', default=5, type=int, help='Number of Clients', required=False)
@@ -52,7 +53,8 @@ if __name__=='__main__':
         'PASSED_SECRET_ACCESS_KEY': AWS_SECRET_ACCESS_KEY,
         'PASSED_SESSION_TOKEN': AWS_SESSION_TOKEN,
         'PASSED_REGION': AWS_REGION,
-        'PASSED_KEY_PAIR': AWS_KEY_PAIR
+        'PASSED_KEY_PAIR': AWS_KEY_PAIR,
+        'BUCKET': BUCKET_NAME
     }.items():
         server_startup_script = server_startup_script.replace(to_replace, replacement)
 
@@ -76,7 +78,8 @@ if __name__=='__main__':
         'PASSED_SECRET_ACCESS_KEY': AWS_SECRET_ACCESS_KEY,
         'PASSED_SESSION_TOKEN': AWS_SESSION_TOKEN,
         'PASSED_REGION': AWS_REGION,
-        'PASSED_KEY_PAIR': AWS_KEY_PAIR
+        'PASSED_KEY_PAIR': AWS_KEY_PAIR,
+        'BUCKET': BUCKET_NAME,
     }.items():
         client_startup_script = client_startup_script.replace(to_replace, replacement)
 
