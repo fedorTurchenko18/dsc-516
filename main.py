@@ -106,7 +106,7 @@ if __name__=='__main__':
         local_log_path = local_log_path[:local_log_path.rindex('/')]
         os.makedirs(f'{local_log_path}/federated-learning-results/{BACKEND}/{strategy}', exist_ok=True)
         server_local_log_path = f'{local_log_path}/federated-learning-results/{BACKEND}/{strategy}/server_log.log'
-        client_local_log_path = f'{local_log_path}/federated-learning-results/{BACKEND}/{strategy}/client_log.log'
+        client_local_log_path = f'{local_log_path}/federated-learning-results/{BACKEND}/{strategy}/client_{instance.replace("-", "_")}_log.log'
 
         local_server_results_paths.append(server_local_log_path)
         local_client_results_paths.append(client_local_log_path)
