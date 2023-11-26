@@ -106,7 +106,6 @@ if __name__=='__main__':
         local_log_path = local_log_path[:local_log_path.rindex('/')]
         os.makedirs(f'{local_log_path}/federated-learning-results/{BACKEND}/{strategy}', exist_ok=True)
         server_local_log_path = f'{local_log_path}/federated-learning-results/{BACKEND}/{strategy}/server_log.log'
-        client_local_log_path = f'{local_log_path}/federated-learning-results/{BACKEND}/{strategy}/client_{instance.replace("-", "_")}_log.log'
 
         local_server_results_paths.append(server_local_log_path)
         local_client_results_paths.append(client_local_log_path)
@@ -118,6 +117,7 @@ if __name__=='__main__':
             fl_server_log_download_response = s3_manager.download_from_s3_bucket(local_file_path=server_local_log_path, object_key=f'{BACKEND}/{strategy}/server_log.log', bucket_name=BUCKET_NAME)
             fl_clients_log_download_responses = []
             for instance in flower_clients:
+                client_local_log_path = f'{local_log_path}/federated-learning-results/{BACKEND}/{strategy}/client_{instance.replace("-", "_")}_log.log'
                 fl_client_log_download_response = s3_manager.download_from_s3_bucket(local_file_path=client_local_log_path, object_key=f'{BACKEND}/{strategy}/client_{instance.replace("-", "_")}_log.log', bucket_name=BUCKET_NAME)
                 fl_clients_log_download_responses.append(fl_client_log_download_response)
             try:
