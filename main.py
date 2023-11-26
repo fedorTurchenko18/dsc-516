@@ -148,6 +148,7 @@ if __name__=='__main__':
     logger.info('Done')
     
     # empty and delete s3 bucket
+    logger.info('Emptying and deleting s3 bucket...')
     for s_p, c_p in zip(local_server_results_paths, local_client_results_paths):
         checks = set()
         if os.path.isfile(s_p) and os.path.isfile(c_p):
@@ -158,3 +159,4 @@ if __name__=='__main__':
         logger.info('Cannot delete bucket as some of the files were not donwloaded. You have to do it manually from AWS UI')
     else:
         s3_manager.delete_s3_bucket(bucket_name=BUCKET_NAME)
+        logger.info('Done')
