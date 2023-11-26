@@ -115,10 +115,10 @@ if __name__=='__main__':
         retry_attempts = 0
         while out_cond == False and retry_attempts < 60:
             logger.info(f'Attempt #{retry_attempts+1} of 60 | Waiting for the server results from strategy {strategy}')
-            fl_server_log_download_response = s3_manager.download_from_s3_bucket(local_file_path=server_local_log_path, object_key=f'{BACKEND}/{strategy}/server_log.log')
+            fl_server_log_download_response = s3_manager.download_from_s3_bucket(local_file_path=server_local_log_path, object_key=f'{BACKEND}/{strategy}/server_log.log', bucket_name=BUCKET_NAME)
             fl_clients_log_download_responses = []
             for instance in flower_clients:
-                fl_client_log_download_response = s3_manager.download_from_s3_bucket(local_file_path=client_local_log_path, object_key=f'{BACKEND}/{strategy}/client_{instance.replace("-", "_")}_log.log')
+                fl_client_log_download_response = s3_manager.download_from_s3_bucket(local_file_path=client_local_log_path, object_key=f'{BACKEND}/{strategy}/client_{instance.replace("-", "_")}_log.log', bucket_name=BUCKET_NAME)
                 fl_clients_log_download_responses.append(fl_client_log_download_response)
             try:
                 if 'error' in fl_server_log_download_response:
@@ -157,4 +157,4 @@ if __name__=='__main__':
     if False in checks:
         logger.info('Cannot delete bucket as some of the files were not donwloaded. You have to do it manually from AWS UI')
     else:
-        s3_manager.delete_s3_bucket()
+        s3_manager.delete_s3_bucket(bucket_name=BUCKET_NAME)
