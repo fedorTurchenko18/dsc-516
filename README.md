@@ -1,6 +1,18 @@
 # Federated Learning Performance Evaluation for different models and libraries
 
-# Instruction for Running the Simulation
+## Project Goals
+The focus of the study was aimed at two key pillars:
+1. Simulation of Federated Learning (FL) workflow on AWS EC2
+2. Comparison of:
+     - Backends for running Deep Learning (DL) model, namely Jax, Tensorflow, and Pytorch, combined with...
+     - ...different FL Strategies, namely Federated- Averaging, Averaging with Momentum, Adaptive Gradient Optimizer, Adaptive Moment Estimation,...
+     - ...in such aspects as:
+       - General performance
+       - Convergence speed over FL rounds
+       - CPU utilization, %
+       - Speed of FL workflow execution
+
+## Instruction for Running the Simulation
 1. Create `.env` file locally
 2. Copy-paste contents of `.env_copy` to `.env`
 3. Start the AWS Academy Learning Lab
