@@ -20,15 +20,17 @@ The focus of the study was aimed at two key pillars:
 <img src="https://sun9-42.userapi.com/impg/DYEB3AT48yllPzWMAgYAVaWtj_-t5gPIz9k3pg/yupOWkYahvA.jpg?size=712x658&quality=95&sign=32e3fb5d15f710eac79f57db569af1fd&type=album" alt="aws-credentials" width="300"/>
 <img src="https://sun9-42.userapi.com/kg6MBo9vkjdDLAo1b4nhkRJGSh22_XYSivrHjw/dDXouXf0Kp4.jpg?size=688x636&quality=95&sign=d9d40bb5e17a5e30a9f33657fc7d6899&type=album" alt="aws-region" width="300"/>
 
-5. Set up the AWS Key Pair by running:
+5. [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+6. Set up the AWS Key Pair by running:
 
 `bash export_aws_credentials.bash`
 
-6. Install the requirements:
+7. Install the requirements:
 
 `pip install -r requirements.txt`
 
-7. Run `python main.py --help` to see all the parameters available for simulation (`--backend` is a mandatory argument)
+8. Run `python main.py --help` to see all the parameters available for simulation (`--backend` is a mandatory argument)
 > [!NOTE]
 > Project team simulates with all the rest parameters being set to their default values
 > 
