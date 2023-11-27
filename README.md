@@ -30,7 +30,7 @@ The focus of the study was aimed at two key pillars:
 
 7. Run `python main.py --help` to see all the parameters available for simulation (`--backend` is a mandatory argument)
 > [!NOTE]
-> - Project team simulates with all the rest parameters being set to their default values
-> - @fedorTurchenko18 simulates with `--backend jax`
-> - @gaturchenko simulates with `--backend torch`
-> - @PanikosChristou99 simulates with `--backend tensorflow`
+> Project team simulates with all the rest parameters being set to their default values
+> @fedorTurchenko18 simulates with `--backend jax`
+> @gaturchenko simulates with `--backend torch`
+> @PanikosChristou99 simulates with `--backend tensorflow`
