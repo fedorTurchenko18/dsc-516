@@ -1,0 +1,65 @@
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:23:46,348 | app.py:162 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:23:46,374 | app.py:175 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:23:46,375 | server.py:89 | Initializing global parameters
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:23:46,375 | server.py:272 | Using initial parameters provided by strategy
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:23:46,375 | server.py:91 | Evaluating initial parameters
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:24:27,642 | server.py:94 | initial parameters (loss, other metrics): 2.308896541595459, {'accuracy': 0.7245773077011108}
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:24:27,643 | server.py:104 | FL starting
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:24:27,643 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:26:51,221 | server.py:236 | fit_round 1 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | WARNING flwr 2023-11-30 17:26:51,286 | fedavg.py:242 | No fit_metrics_aggregation_fn provided
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:27:13,873 | server.py:125 | fit progress: (1, 91569.9921875, {'accuracy': 0.6975115537643433}, 166.2297511380002)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:27:13,878 | server.py:173 | evaluate_round 1: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:27:56,337 | server.py:187 | evaluate_round 1 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | WARNING flwr 2023-11-30 17:27:56,337 | fedavg.py:273 | No evaluate_metrics_aggregation_fn provided
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:27:56,337 | server.py:222 | fit_round 2: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:30:19,378 | server.py:236 | fit_round 2 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:30:41,798 | server.py:125 | fit progress: (2, 145.0077667236328, {'accuracy': 0.67166668176651}, 374.1551054769998)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:30:41,798 | server.py:173 | evaluate_round 2: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:31:23,935 | server.py:187 | evaluate_round 2 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:31:23,935 | server.py:222 | fit_round 3: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:33:47,450 | server.py:236 | fit_round 3 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:34:10,084 | server.py:125 | fit progress: (3, 127.17510223388672, {'accuracy': 0.6540064215660095}, 582.4406952219997)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:34:10,089 | server.py:173 | evaluate_round 3: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:34:51,965 | server.py:187 | evaluate_round 3 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:34:51,966 | server.py:222 | fit_round 4: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:36:31,916 | server.py:236 | fit_round 4 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:37:13,236 | server.py:125 | fit progress: (4, 2.2285590171813965, {'accuracy': 0.6398662328720093}, 765.5931230429997)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:37:13,237 | server.py:173 | evaluate_round 4: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:37:55,614 | server.py:187 | evaluate_round 4 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:37:55,614 | server.py:222 | fit_round 5: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:40:19,124 | server.py:236 | fit_round 5 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:41:00,433 | server.py:125 | fit progress: (5, 2.1667673587799072, {'accuracy': 0.6267361044883728}, 992.7902496679999)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:41:00,434 | server.py:173 | evaluate_round 5: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:41:24,088 | server.py:187 | evaluate_round 5 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:41:24,088 | server.py:222 | fit_round 6: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:43:47,613 | server.py:236 | fit_round 6 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:44:09,963 | server.py:125 | fit progress: (6, 2.1080942153930664, {'accuracy': 0.6145114898681641}, 1182.3199012759997)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:44:09,963 | server.py:173 | evaluate_round 6: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:44:52,004 | server.py:187 | evaluate_round 6 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:44:52,005 | server.py:222 | fit_round 7: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:47:15,396 | server.py:236 | fit_round 7 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:47:37,804 | server.py:125 | fit progress: (7, 2.071936845779419, {'accuracy': 0.6031018495559692}, 1390.160897025)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:47:37,804 | server.py:173 | evaluate_round 7: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:48:20,362 | server.py:187 | evaluate_round 7 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:48:20,363 | server.py:222 | fit_round 8: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:50:43,785 | server.py:236 | fit_round 8 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:51:06,118 | server.py:125 | fit progress: (8, 2.052558660507202, {'accuracy': 0.5924283266067505}, 1598.4753789690003)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:51:06,119 | server.py:173 | evaluate_round 8: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:51:48,495 | server.py:187 | evaluate_round 8 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:51:48,495 | server.py:222 | fit_round 9: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:54:11,600 | server.py:236 | fit_round 9 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:54:52,922 | server.py:125 | fit progress: (9, 2.0464484691619873, {'accuracy': 0.5824218988418579}, 1825.2788259139998)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:54:52,922 | server.py:173 | evaluate_round 9: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:55:16,125 | server.py:187 | evaluate_round 9 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:55:16,125 | server.py:222 | fit_round 10: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:57:39,174 | server.py:236 | fit_round 10 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:58:20,505 | server.py:125 | fit progress: (10, 2.043660879135132, {'accuracy': 0.5730218887329102}, 2032.8621485920003)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:58:20,506 | server.py:173 | evaluate_round 10: strategy sampled 2 clients (out of 2)
+tensorflow-FedAdaGrad-run | DEBUG flwr 2023-11-30 17:59:02,917 | server.py:187 | evaluate_round 10 received 2 results and 0 failures
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:59:02,917 | server.py:153 | FL finished in 2075.274444001
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:59:02,927 | app.py:225 | app_fit: losses_distributed [(1, 91569.9921875), (2, 145.0077667236328), (3, 127.17510223388672), (4, 2.2285590171813965), (5, 2.1667673587799072), (6, 2.1080942153930664), (7, 2.071936845779419), (8, 2.052558660507202), (9, 2.0464484691619873), (10, 2.043660879135132)]
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:59:02,937 | app.py:226 | app_fit: metrics_distributed_fit {}
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:59:02,940 | app.py:227 | app_fit: metrics_distributed {}
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:59:02,943 | app.py:228 | app_fit: losses_centralized [(0, 2.308896541595459), (1, 91569.9921875), (2, 145.0077667236328), (3, 127.17510223388672), (4, 2.2285590171813965), (5, 2.1667673587799072), (6, 2.1080942153930664), (7, 2.071936845779419), (8, 2.052558660507202), (9, 2.0464484691619873), (10, 2.043660879135132)]
+tensorflow-FedAdaGrad-run | INFO flwr 2023-11-30 17:59:02,953 | app.py:229 | app_fit: metrics_centralized {'accuracy': [(0, 0.7245773077011108), (1, 0.6975115537643433), (2, 0.67166668176651), (3, 0.6540064215660095), (4, 0.6398662328720093), (5, 0.6267361044883728), (6, 0.6145114898681641), (7, 0.6031018495559692), (8, 0.5924283266067505), (9, 0.5824218988418579), (10, 0.5730218887329102)]}
