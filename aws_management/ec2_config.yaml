@@ -4,7 +4,7 @@ clients:
   BlockDeviceMappings:
     - DeviceName: '/dev/sdh'
       Ebs:
-        VolumeSize: 16
+        VolumeSize: 32
         VolumeType: gp3
 
 server:
@@ -13,5 +13,5 @@ server:
   BlockDeviceMappings:
     - DeviceName: '/dev/sdh'
       Ebs:
-        VolumeSize: 16
+        VolumeSize: 32
         VolumeType: gp3
