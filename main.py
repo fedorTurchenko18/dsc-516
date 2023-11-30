@@ -15,7 +15,7 @@ if __name__=='__main__':
 
     parser = argparse.ArgumentParser(description='Run Flower client with subset of data')
     parser.add_argument('--n_client_instances', type=int, help='Number of Clients', required=True)
-    parser.add_argument('--num_rounds', type=int, default=5, help='Number of Federated Learning rounds to run', required=False)
+    parser.add_argument('--num_rounds', type=int, default=10, help='Number of Federated Learning rounds to run', required=False)
     parser.add_argument('--strategy', nargs='+', type=str, default=["FedAvg", "FedAvgM", "FedAdaGrad", "FedAdam"], help='Strategy(-ies) to initialize Flower Server with. Available: "FedAvg", "FedAvgM", "FedAdaGrad", "FedAdam"', required=False)
     parser.add_argument('--backend', type=str, help='Backend of Flower Client. Available: "jax", "torch", "tensorflow"', required=False)
     
