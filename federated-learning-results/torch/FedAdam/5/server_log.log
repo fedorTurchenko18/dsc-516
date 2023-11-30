@@ -1,0 +1,65 @@
+torch-FedAdam-run | INFO flwr 2023-11-30 21:30:28,851 | app.py:162 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+torch-FedAdam-run | INFO flwr 2023-11-30 21:30:28,868 | app.py:175 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+torch-FedAdam-run | INFO flwr 2023-11-30 21:30:28,868 | server.py:89 | Initializing global parameters
+torch-FedAdam-run | INFO flwr 2023-11-30 21:30:28,868 | server.py:272 | Using initial parameters provided by strategy
+torch-FedAdam-run | INFO flwr 2023-11-30 21:30:28,868 | server.py:91 | Evaluating initial parameters
+torch-FedAdam-run | INFO flwr 2023-11-30 21:31:10,175 | server.py:94 | initial parameters (loss, other metrics): 2.298248767852783, {'accuracy': 0.06111111119389534}
+torch-FedAdam-run | INFO flwr 2023-11-30 21:31:10,175 | server.py:104 | FL starting
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:33:46,840 | server.py:222 | fit_round 1: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:34:16,428 | server.py:236 | fit_round 1 received 5 results and 0 failures
+torch-FedAdam-run | WARNING flwr 2023-11-30 21:34:16,581 | fedavg.py:242 | No fit_metrics_aggregation_fn provided
+torch-FedAdam-run | INFO flwr 2023-11-30 21:34:39,179 | server.py:125 | fit progress: (1, 76628.6328125, {'accuracy': 0.08819444477558136}, 209.00414853300003)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:34:39,180 | server.py:173 | evaluate_round 1: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:35:01,465 | server.py:187 | evaluate_round 1 received 5 results and 0 failures
+torch-FedAdam-run | WARNING flwr 2023-11-30 21:35:01,465 | fedavg.py:273 | No evaluate_metrics_aggregation_fn provided
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:35:01,465 | server.py:222 | fit_round 2: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:35:29,566 | server.py:236 | fit_round 2 received 5 results and 0 failures
+torch-FedAdam-run | INFO flwr 2023-11-30 21:36:10,965 | server.py:125 | fit progress: (2, 3005272.0, {'accuracy': 0.10370370000600815}, 300.79025422000007)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:36:10,966 | server.py:173 | evaluate_round 2: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:36:33,158 | server.py:187 | evaluate_round 2 received 5 results and 0 failures
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:36:33,158 | server.py:222 | fit_round 3: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:37:00,305 | server.py:236 | fit_round 3 received 5 results and 0 failures
+torch-FedAdam-run | INFO flwr 2023-11-30 21:37:41,752 | server.py:125 | fit progress: (3, 22767174.0, {'accuracy': 0.11145833134651184}, 391.57720724500007)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:37:41,753 | server.py:173 | evaluate_round 3: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:37:55,806 | server.py:187 | evaluate_round 3 received 5 results and 0 failures
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:37:55,806 | server.py:222 | fit_round 4: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:38:22,961 | server.py:236 | fit_round 4 received 5 results and 0 failures
+torch-FedAdam-run | INFO flwr 2023-11-30 21:38:45,728 | server.py:125 | fit progress: (4, 86659416.0, {'accuracy': 0.11611111462116241}, 455.55259879100004)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:38:45,728 | server.py:173 | evaluate_round 4: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:38:59,565 | server.py:187 | evaluate_round 4 received 5 results and 0 failures
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:38:59,565 | server.py:222 | fit_round 5: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:39:27,121 | server.py:236 | fit_round 5 received 5 results and 0 failures
+torch-FedAdam-run | INFO flwr 2023-11-30 21:40:08,677 | server.py:125 | fit progress: (5, 227630304.0, {'accuracy': 0.11921296268701553}, 538.5022180130001)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:40:08,678 | server.py:173 | evaluate_round 5: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:40:22,634 | server.py:187 | evaluate_round 5 received 5 results and 0 failures
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:40:22,634 | server.py:222 | fit_round 6: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:40:48,749 | server.py:236 | fit_round 6 received 5 results and 0 failures
+torch-FedAdam-run | INFO flwr 2023-11-30 21:41:11,836 | server.py:125 | fit progress: (6, 481991584.0, {'accuracy': 0.12142857164144516}, 601.6612833940001)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:41:11,837 | server.py:173 | evaluate_round 6: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:41:24,817 | server.py:187 | evaluate_round 6 received 5 results and 0 failures
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:41:24,818 | server.py:222 | fit_round 7: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:41:51,653 | server.py:236 | fit_round 7 received 5 results and 0 failures
+torch-FedAdam-run | INFO flwr 2023-11-30 21:42:14,326 | server.py:125 | fit progress: (7, 875154496.0, {'accuracy': 0.12309027463197708}, 664.151044802)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:42:14,331 | server.py:173 | evaluate_round 7: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:42:28,361 | server.py:187 | evaluate_round 7 received 5 results and 0 failures
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:42:28,362 | server.py:222 | fit_round 8: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:42:55,672 | server.py:236 | fit_round 8 received 5 results and 0 failures
+torch-FedAdam-run | INFO flwr 2023-11-30 21:43:37,056 | server.py:125 | fit progress: (8, 1421503232.0, {'accuracy': 0.12438271939754486}, 746.880420348)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:43:37,056 | server.py:173 | evaluate_round 8: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:43:59,016 | server.py:187 | evaluate_round 8 received 5 results and 0 failures
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:43:59,016 | server.py:222 | fit_round 9: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:44:26,130 | server.py:236 | fit_round 9 received 5 results and 0 failures
+torch-FedAdam-run | INFO flwr 2023-11-30 21:44:47,057 | server.py:125 | fit progress: (9, 2124616192.0, {'accuracy': 0.12541666626930237}, 816.882008444)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:44:47,058 | server.py:173 | evaluate_round 9: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:45:09,043 | server.py:187 | evaluate_round 9 received 5 results and 0 failures
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:45:09,043 | server.py:222 | fit_round 10: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:45:36,978 | server.py:236 | fit_round 10 received 5 results and 0 failures
+torch-FedAdam-run | INFO flwr 2023-11-30 21:45:55,639 | server.py:125 | fit progress: (10, 2978267648.0, {'accuracy': 0.1262626200914383}, 885.4634744420001)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:45:55,639 | server.py:173 | evaluate_round 10: strategy sampled 5 clients (out of 5)
+torch-FedAdam-run | DEBUG flwr 2023-11-30 21:46:17,983 | server.py:187 | evaluate_round 10 received 5 results and 0 failures
+torch-FedAdam-run | INFO flwr 2023-11-30 21:46:17,983 | server.py:153 | FL finished in 907.80783379
+torch-FedAdam-run | INFO flwr 2023-11-30 21:46:17,985 | app.py:225 | app_fit: losses_distributed [(1, 14.174055099487305), (2, 13.90623664855957), (3, 13.90623664855957), (4, 13.90623664855957), (5, 13.90623664855957), (6, 13.90623664855957), (7, 13.90623664855957), (8, 13.90623664855957), (9, 13.90623664855957), (10, 13.90623664855957)]
+torch-FedAdam-run | INFO flwr 2023-11-30 21:46:17,985 | app.py:226 | app_fit: metrics_distributed_fit {}
+torch-FedAdam-run | INFO flwr 2023-11-30 21:46:17,985 | app.py:227 | app_fit: metrics_distributed {}
+torch-FedAdam-run | INFO flwr 2023-11-30 21:46:17,986 | app.py:228 | app_fit: losses_centralized [(0, 2.298248767852783), (1, 76628.6328125), (2, 3005272.0), (3, 22767174.0), (4, 86659416.0), (5, 227630304.0), (6, 481991584.0), (7, 875154496.0), (8, 1421503232.0), (9, 2124616192.0), (10, 2978267648.0)]
+torch-FedAdam-run | INFO flwr 2023-11-30 21:46:17,986 | app.py:229 | app_fit: metrics_centralized {'accuracy': [(0, 0.06111111119389534), (1, 0.08819444477558136), (2, 0.10370370000600815), (3, 0.11145833134651184), (4, 0.11611111462116241), (5, 0.11921296268701553), (6, 0.12142857164144516), (7, 0.12309027463197708), (8, 0.12438271939754486), (9, 0.12541666626930237), (10, 0.1262626200914383)]}
