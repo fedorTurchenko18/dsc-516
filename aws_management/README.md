@@ -1,0 +1,1 @@
+Disclaimer: Chat GPT was used to obtain snippets of code on how to work with specific boto3 endpoints and the requests configuration

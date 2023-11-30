@@ -2,16 +2,18 @@ clients:
   ImageId: ami-05c13eab67c5d8861
   InstanceType: r5.large
   BlockDeviceMappings:
-    - DeviceName: '/dev/sdh'
+    - DeviceName: '/dev/xvda'
       Ebs:
         VolumeSize: 32
         VolumeType: gp3
+        DeleteOnTermination: True
 
 server:
   ImageId: ami-05c13eab67c5d8861
   InstanceType: r5.large
   BlockDeviceMappings:
-    - DeviceName: '/dev/sdh'
+    - DeviceName: '/dev/xvda'
       Ebs:
         VolumeSize: 32
         VolumeType: gp3
+        DeleteOnTermination: True
