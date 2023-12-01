@@ -1,0 +1,65 @@
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:30:36,991 | app.py:162 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:30:36,995 | app.py:175 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:30:36,995 | server.py:89 | Initializing global parameters
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:30:36,995 | server.py:272 | Using initial parameters provided by strategy
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:30:36,996 | server.py:91 | Evaluating initial parameters
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:30:57,769 | server.py:94 | initial parameters (loss, other metrics): 2.3003251552581787, {'accuracy': 0.6238526701927185}
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:30:57,770 | server.py:104 | FL starting
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:30:57,770 | server.py:222 | fit_round 1: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:31:25,040 | server.py:236 | fit_round 1 received 8 results and 0 failures
+torch-FedAdaGrad-run | WARNING flwr 2023-12-01 19:31:25,261 | fedavg.py:242 | No fit_metrics_aggregation_fn provided
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:31:46,053 | server.py:125 | fit progress: (1, 34266.703125, {'accuracy': 0.6009837985038757}, 48.283593021000115)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:31:46,054 | server.py:173 | evaluate_round 1: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:32:05,664 | server.py:187 | evaluate_round 1 received 8 results and 0 failures
+torch-FedAdaGrad-run | WARNING flwr 2023-12-01 19:32:05,665 | fedavg.py:273 | No evaluate_metrics_aggregation_fn provided
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:32:05,665 | server.py:222 | fit_round 2: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:32:32,543 | server.py:236 | fit_round 2 received 8 results and 0 failures
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:32:51,369 | server.py:125 | fit progress: (2, 253796.828125, {'accuracy': 0.5788888931274414}, 113.59892736899997)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:32:51,369 | server.py:173 | evaluate_round 2: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:33:12,839 | server.py:187 | evaluate_round 2 received 8 results and 0 failures
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:33:12,840 | server.py:222 | fit_round 3: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:33:39,795 | server.py:236 | fit_round 3 received 8 results and 0 failures
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:34:02,277 | server.py:125 | fit progress: (3, 533226.375, {'accuracy': 0.5584936141967773}, 184.5077537300001)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:34:02,278 | server.py:173 | evaluate_round 3: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:34:26,750 | server.py:187 | evaluate_round 3 received 8 results and 0 failures
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:34:26,750 | server.py:222 | fit_round 4: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:34:55,405 | server.py:236 | fit_round 4 received 8 results and 0 failures
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:35:36,870 | server.py:125 | fit progress: (4, 711181.9375, {'accuracy': 0.5396090745925903}, 279.0998858390001)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:35:36,870 | server.py:173 | evaluate_round 4: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:35:59,060 | server.py:187 | evaluate_round 4 received 8 results and 0 failures
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:35:59,060 | server.py:222 | fit_round 5: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:36:25,732 | server.py:236 | fit_round 5 received 8 results and 0 failures
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:37:07,188 | server.py:125 | fit progress: (5, 803601.8125, {'accuracy': 0.5220733880996704}, 369.4184528389999)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:37:07,189 | server.py:173 | evaluate_round 5: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:37:27,896 | server.py:187 | evaluate_round 5 received 8 results and 0 failures
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:37:27,896 | server.py:222 | fit_round 6: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:37:54,861 | server.py:236 | fit_round 6 received 8 results and 0 failures
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:38:36,317 | server.py:125 | fit progress: (6, 846406.9375, {'accuracy': 0.5057471394538879}, 458.54733545800013)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:38:36,317 | server.py:173 | evaluate_round 6: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:38:58,684 | server.py:187 | evaluate_round 6 received 8 results and 0 failures
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:38:58,684 | server.py:222 | fit_round 7: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:39:24,986 | server.py:236 | fit_round 7 received 8 results and 0 failures
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:39:47,528 | server.py:125 | fit progress: (7, 866043.8125, {'accuracy': 0.4905092716217041}, 529.7579898040001)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:39:47,532 | server.py:173 | evaluate_round 7: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:40:10,097 | server.py:187 | evaluate_round 7 received 8 results and 0 failures
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:40:10,098 | server.py:222 | fit_round 8: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:40:36,806 | server.py:236 | fit_round 8 received 8 results and 0 failures
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:40:59,389 | server.py:125 | fit progress: (8, 874172.375, {'accuracy': 0.47625449299812317}, 601.619566954)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:40:59,390 | server.py:173 | evaluate_round 8: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:41:21,035 | server.py:187 | evaluate_round 8 received 8 results and 0 failures
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:41:21,035 | server.py:222 | fit_round 9: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:41:48,142 | server.py:236 | fit_round 9 received 8 results and 0 failures
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:42:10,649 | server.py:125 | fit progress: (9, 877668.0, {'accuracy': 0.462890625}, 672.87944524)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:42:10,650 | server.py:173 | evaluate_round 9: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:42:42,807 | server.py:187 | evaluate_round 9 received 8 results and 0 failures
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:42:42,807 | server.py:222 | fit_round 10: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:43:14,764 | server.py:236 | fit_round 10 received 8 results and 0 failures
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:43:37,374 | server.py:125 | fit progress: (10, 879045.625, {'accuracy': 0.4503366947174072}, 759.6047371100001)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:43:37,377 | server.py:173 | evaluate_round 10: strategy sampled 8 clients (out of 8)
+torch-FedAdaGrad-run | DEBUG flwr 2023-12-01 19:43:59,609 | server.py:187 | evaluate_round 10 received 8 results and 0 failures
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:43:59,609 | server.py:153 | FL finished in 781.8393468259999
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:43:59,609 | app.py:225 | app_fit: losses_distributed [(1, 14.913619041442871), (2, 15.307812690734863), (3, 15.307812690734863), (4, 15.307812690734863), (5, 15.307812690734863), (6, 15.307812690734863), (7, 15.307812690734863), (8, 15.307812690734863), (9, 15.307812690734863), (10, 15.307812690734863)]
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:43:59,617 | app.py:226 | app_fit: metrics_distributed_fit {}
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:43:59,617 | app.py:227 | app_fit: metrics_distributed {}
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:43:59,617 | app.py:228 | app_fit: losses_centralized [(0, 2.3003251552581787), (1, 34266.703125), (2, 253796.828125), (3, 533226.375), (4, 711181.9375), (5, 803601.8125), (6, 846406.9375), (7, 866043.8125), (8, 874172.375), (9, 877668.0), (10, 879045.625)]
+torch-FedAdaGrad-run | INFO flwr 2023-12-01 19:43:59,624 | app.py:229 | app_fit: metrics_centralized {'accuracy': [(0, 0.6238526701927185), (1, 0.6009837985038757), (2, 0.5788888931274414), (3, 0.5584936141967773), (4, 0.5396090745925903), (5, 0.5220733880996704), (6, 0.5057471394538879), (7, 0.4905092716217041), (8, 0.47625449299812317), (9, 0.462890625), (10, 0.4503366947174072)]}
