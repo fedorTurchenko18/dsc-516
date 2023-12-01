@@ -1,0 +1,57 @@
+torch-FedAdam-run | INFO flwr 2023-12-01 16:57:56,523 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+torch-FedAdam-run | DEBUG flwr 2023-12-01 16:57:56,525 | connection.py:42 | ChannelConnectivity.IDLE
+torch-FedAdam-run | DEBUG flwr 2023-12-01 16:57:56,525 | connection.py:42 | ChannelConnectivity.CONNECTING
+torch-FedAdam-run | DEBUG flwr 2023-12-01 16:57:56,534 | connection.py:42 | ChannelConnectivity.TRANSIENT_FAILURE
+torch-FedAdam-run | DEBUG flwr 2023-12-01 16:57:56,737 | connection.py:139 | gRPC channel closed
+torch-FedAdam-run | INFO flwr 2023-12-01 16:58:06,751 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+torch-FedAdam-run | INFO flwr 2023-12-01 16:58:06,751 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+torch-FedAdam-run | DEBUG flwr 2023-12-01 16:58:06,777 | connection.py:42 | ChannelConnectivity.IDLE
+torch-FedAdam-run | DEBUG flwr 2023-12-01 16:58:06,777 | connection.py:42 | ChannelConnectivity.IDLE
+torch-FedAdam-run | DEBUG flwr 2023-12-01 16:58:06,778 | connection.py:42 | ChannelConnectivity.CONNECTING
+torch-FedAdam-run | DEBUG flwr 2023-12-01 16:58:06,778 | connection.py:42 | ChannelConnectivity.CONNECTING
+torch-FedAdam-run | DEBUG flwr 2023-12-01 16:58:06,788 | connection.py:42 | ChannelConnectivity.READY
+torch-FedAdam-run | DEBUG flwr 2023-12-01 16:58:06,788 | connection.py:42 | ChannelConnectivity.READY
+torch-FedAdam-run | INFO flwr 2023-12-01 16:58:31,660 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 16, 58, 31, 660110), 'cpu_utilization': 55.3}
+torch-FedAdam-run | INFO flwr 2023-12-01 16:58:31,660 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 16, 58, 31, 660110), 'cpu_utilization': 55.3}
+torch-FedAdam-run | INFO flwr 2023-12-01 16:59:26,163 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 16, 59, 26, 163564), 'cpu_utilization': 48.0}
+torch-FedAdam-run | INFO flwr 2023-12-01 16:59:26,163 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 16, 59, 26, 163564), 'cpu_utilization': 48.0}
+torch-FedAdam-run | INFO flwr 2023-12-01 16:59:51,752 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 16, 59, 51, 752602), 'cpu_utilization': 55.8}
+torch-FedAdam-run | INFO flwr 2023-12-01 16:59:51,752 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 16, 59, 51, 752602), 'cpu_utilization': 55.8}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:00:39,073 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 0, 39, 73532), 'cpu_utilization': 53.9}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:00:39,073 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 0, 39, 73532), 'cpu_utilization': 53.9}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:01:02,025 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 1, 2, 25455), 'cpu_utilization': 55.1}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:01:02,025 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 1, 2, 25455), 'cpu_utilization': 55.1}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:01:47,811 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 1, 47, 810932), 'cpu_utilization': 53.7}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:01:47,811 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 1, 47, 810932), 'cpu_utilization': 53.7}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:02:13,024 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 2, 13, 24780), 'cpu_utilization': 54.9}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:02:13,024 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 2, 13, 24780), 'cpu_utilization': 54.9}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:03:18,439 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 3, 18, 439048), 'cpu_utilization': 54.0}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:03:18,439 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 3, 18, 439048), 'cpu_utilization': 54.0}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:03:56,151 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 3, 56, 150873), 'cpu_utilization': 55.5}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:03:56,151 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 3, 56, 150873), 'cpu_utilization': 55.5}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:04:41,781 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 4, 41, 781671), 'cpu_utilization': 37.5}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:04:41,781 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 4, 41, 781671), 'cpu_utilization': 37.5}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:04:55,890 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 4, 55, 889898), 'cpu_utilization': 55.4}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:04:55,890 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 4, 55, 889898), 'cpu_utilization': 55.4}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:06:02,975 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 6, 2, 975098), 'cpu_utilization': 44.9}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:06:02,975 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 6, 2, 975098), 'cpu_utilization': 44.9}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:06:41,440 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 6, 41, 440136), 'cpu_utilization': 55.0}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:06:41,440 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 6, 41, 440136), 'cpu_utilization': 55.0}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:07:26,307 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 7, 26, 306967), 'cpu_utilization': 30.5}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:07:26,307 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 7, 26, 306967), 'cpu_utilization': 30.5}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:08:00,930 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 8, 0, 929969), 'cpu_utilization': 55.2}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:08:00,930 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 8, 0, 929969), 'cpu_utilization': 55.2}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:08:43,265 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 8, 43, 265030), 'cpu_utilization': 54.4}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:08:43,265 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 8, 43, 265030), 'cpu_utilization': 54.4}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:09:00,927 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 9, 0, 927236), 'cpu_utilization': 54.5}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:09:00,927 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 9, 0, 927236), 'cpu_utilization': 54.5}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:09:48,293 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 9, 48, 293217), 'cpu_utilization': 53.7}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:09:48,293 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 9, 48, 293217), 'cpu_utilization': 53.7}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:10:11,592 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 10, 11, 592516), 'cpu_utilization': 55.0}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:10:11,592 | client.py:82 | Instance i-0819cce4bce0304a2 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 10, 11, 592516), 'cpu_utilization': 55.0}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:10:58,900 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 10, 58, 900684), 'cpu_utilization': 42.6}
+torch-FedAdam-run | INFO flwr 2023-12-01 17:10:58,900 | client.py:104 | Instance i-0819cce4bce0304a2 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 17, 10, 58, 900684), 'cpu_utilization': 42.6}
+torch-FedAdam-run | DEBUG flwr 2023-12-01 17:11:07,580 | connection.py:139 | gRPC channel closed
+torch-FedAdam-run | DEBUG flwr 2023-12-01 17:11:07,580 | connection.py:139 | gRPC channel closed
+torch-FedAdam-run | INFO flwr 2023-12-01 17:11:07,580 | app.py:215 | Disconnect and shut down
+torch-FedAdam-run | INFO flwr 2023-12-01 17:11:07,580 | app.py:215 | Disconnect and shut down
