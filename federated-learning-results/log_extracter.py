@@ -103,27 +103,232 @@
 import os
 import glob
 import re
+import math
+import pandas as pd
 
 local_log_path = "."
 backends = ["jax", "tensorflow", "torch"]
 strategies = ["FedAdaGard", "FedAvg", "FedAdam", "FedAvgM"]
 client_instances = ["2", "5"]
 
+df = pd.DataFrame(columns=["strategy", "n_clients", "backend",'client_bool','client_num', "metric", "metric_value", "timestamp",'round'])
+
+
+# Function to add a timestamp to the data list
+#  Instance i-09a90e0be41d874a0 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 11, 26, 13, 33, 46, 702970), 'cpu_utilization': 52.5}
+#  Instance i-09a90e0be41d874a0 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 11, 26, 13, 34, 25, 762959), 'cpu_utilization': 54.2}
+import ast
+from datetime import datetime
+
+def add_timestamp(element,backend, strategy, instance,client_instances,server=False,i=0,fits_i=0):
+    
+    method = "evaluate"
+    if "fit" in element:
+        method = "fit"
+    #lets get the timestamp , the cpu utilization
+    #lett get the dict surrounded by {}
+    dict_str = '{' + element.split("{")[1]
+
+    split_dict = dict_str.split(": ")
+    # print(split_dict)
+    #lets get the timestamp
+    timestamp_str = split_dict[1].split("(")[1].split(")")[0]
+    #lets convert the timestamp
+    timestamp = datetime.strptime(timestamp_str, '%Y, %m, %d, %H, %M, %S, %f')
+    timestamp_formatted = timestamp.strftime("%Y-%m-%d %H:%M:%S")
+    #lets get the cpu utilization
+    cpu_utilization_str = split_dict[2].split("}")[0]
+    cpu_utilization = float(cpu_utilization_str)
+    data_to_add = {"strategy": strategy, 
+                   "n_clients": instance, 
+                   "backend": backend,
+                   'client_bool':server,
+                   'client_num':i, 
+                   'metric': f"cpu_utilization_{method}", 
+                   "metric_value": cpu_utilization, 
+                   "timestamp": timestamp_formatted,
+                   'round':fits_i}
+    
+    # print(data_to_add)
+    #lets add the data to the df
+    df.loc[len(df)] = data_to_add
+
+# jax-FedAdaGrad-run | INFO flwr 2023-11-26 14:14:40,446 | app.py:225 | app_fit: losses_distributed [(1, 11.935277938842773), (2, 15.066919326782227), (3, 15.066919326782227), (4, 15.066919326782227), (5, 15.066919326782227), (6, 15.066919326782227), (7, 15.066919326782227), (8, 15.066919326782227), (9, 15.066919326782227), (10, 15.066919326782227)]
+# jax-FedAdaGrad-run | INFO flwr 2023-11-26 14:14:40,461 | app.py:226 | app_fit: metrics_distributed_fit {}
+# jax-FedAdaGrad-run | INFO flwr 2023-11-26 14:14:40,462 | app.py:227 | app_fit: metrics_distributed {}
+# jax-FedAdaGrad-run | INFO flwr 2023-11-26 14:14:40,468 | app.py:228 | app_fit: losses_centralized [(0, 2.3083078861236572), (1, 38922.67578125), (2, 379447.53125), (3, 600308.375), (4, 669147.5), (5, 687167.0625), (6, 692347.0625), (7, 693579.5625), (8, 693945.8125), (9, 694108.6875), (10, 694142.5)]
+# jax-FedAdaGrad-run | INFO flwr 2023-11-26 14:14:40,476 | app.py:229 | app_fit: metrics_centralized {'accuracy': [(0, 0.6989734172821045), (1, 0.6807291507720947), (2, 0.656166672706604), (3, 0.6334936022758484), (4, 0.612500011920929), (5, 0.5930059552192688), (6, 0.5748563408851624), (7, 0.5579166412353516), (8, 0.5420699119567871), (9, 0.5272135138511658), (10, 0.5132575631141663)]}
+def add_fit_metrics(element,backend, strategy, instance,client_instances,server=False):
+    if 'losses_distributed' in element:
+        right_of_array = element.split("[")[1]
+        # print(right_of_array)
+        left_of_array = right_of_array.split("]")[0]
+        # print(left_of_array)
+        array_full = "["+left_of_array+"]"
+        # print(array_full)
+        array = ast.literal_eval(array_full)
+        # print(array)
+        # [(1, 11.935277938842773), (2, 15.066919326782227), (3, 15.066919326782227), (4, 15.066919326782227), (5, 15.066919326782227), (6, 15.066919326782227), (7, 15.066919326782227), (8, 15.066919326782227), (9, 15.066919326782227), (10, 15.066919326782227)]
+        for i in range(len(array)):
+            data_to_add = {"strategy": strategy, 
+                   "n_clients": instance, 
+                   "backend": backend,
+                   'client_bool':False,
+                   'client_num':None, 
+                   'metric': f"losses_distributed_round_{array[i][0]}",
+                   "metric_value": array[i][1], 
+                   "timestamp": None,
+                   'round':array[i][0]}
+            df.loc[len(df)] = data_to_add
+
+    elif 'losses_centralized' in element:
+        right_of_array = element.split("[")[1]
+        # print(right_of_array)
+        left_of_array = right_of_array.split("]")[0]
+        # print(left_of_array)
+        array_full = "["+left_of_array+"]"
+        # print(array_full)
+        array = ast.literal_eval(array_full)
+        # print(array)
+        # [(0, 2.3083078861236572), (1, 38922.67578125), (2, 379447.53125), (3, 600308.375), (4, 669147.5), (5, 687167.0625), (6, 692347.0625), (7, 693579.5625), (8, 693945.8125), (9, 694108.6875), (10, 694142.5)]
+        for i in range(len(array)):
+            data_to_add = {"strategy": strategy, 
+                   "n_clients": instance, 
+                   "backend": backend,
+                   'client_bool':False,
+                   'client_num':None, 
+                   'metric': f"losses_centralized_round_{array[i][0]}",
+                   "metric_value": array[i][1], 
+                   "timestamp": None,
+                   'round':array[i][0]}
+            df.loc[len(df)] = data_to_add
+# jax-FedAdaGrad-run | INFO flwr 2023-11-26 14:14:40,476 | app.py:229 | app_fit: metrics_centralized {'accuracy': [(0, 0.6989734172821045), (1, 0.6807291507720947), (2, 0.656166672706604), (3, 0.6334936022758484), (4, 0.612500011920929), (5, 0.5930059552192688), (6, 0.5748563408851624), (7, 0.5579166412353516), (8, 0.5420699119567871), (9, 0.5272135138511658), (10, 0.5132575631141663)]}
+    elif 'metrics_centralized' in element:
+        right_of_dict = element.split("{")[1]
+        left_of_dict = right_of_dict.split("}")[0]
+        dict_full = "{"+left_of_dict+"}"
+        dict = ast.literal_eval(dict_full)
+        # print(dict)
+        # {'accuracy': [(0, 0.6989734172821045), (1, 0.6807291507720947), (2, 0.656166672706604), (3, 0.6334936022758484), (4, 0.612500011920929), (5, 0.5930059552192688), (6, 0.5748563408851624), (7, 0.5579166412353516), (8, 0.5420699119567871), (9, 0.5272135138511658), (10, 0.5132575631141663)]}
+        accuracy_array = dict['accuracy']
+        for i in range(len(accuracy_array)):
+            data_to_add = {"strategy": strategy, 
+                   "n_clients": instance, 
+                   "backend": backend,
+                   'client_bool':False,
+                   'client_num':None, 
+                   'metric': f"metrics_centralized_round_{accuracy_array[i][0]}",
+                   "metric_value": accuracy_array[i][1], 
+                   "timestamp": None,
+                   'round':accuracy_array[i][0]}
+            df.loc[len(df)] = data_to_add
+
+# jax-FedAdaGrad-run | INFO flwr 2023-11-26 14:11:52,744 | server.py:125 | fit progress: (9, 694108.6875, {'accuracy': 0.5272135138511658}, 1246.2302874939996)
+def add_fit_progress(element,backend, strategy, instance,client_instances,server=False):
+    after_parenthesis = element.split("(")[1]
+    # print(after_parenthesis)
+    before_parenthesis = after_parenthesis.split(")")[0]
+    # print(before_parenthesis)
+    split_by_comma = before_parenthesis.split(",")
+    round = split_by_comma[0]
+    # print(round)
+    loss = split_by_comma[1]
+    # print(loss)
+    right_of_dict = split_by_comma[2]
+    # print(right_of_dict)
+    left_of_dict = right_of_dict.split("}")[0]
+    # print(left_of_dict)
+    accuracy = left_of_dict.split(": ")[1]
+    # print(accuracy)
+    time_after_starting = split_by_comma[3]
+    # print(time_after_starting)
+    data_to_add = {"strategy": strategy, 
+                   "n_clients": instance, 
+                   "backend": backend,
+                   'client_bool':False,
+                   'client_num':None, 
+                   'metric': f"fit_progress_round_{round}",
+                   "metric_value": loss, 
+                   "timestamp": time_after_starting,
+                   'round':round}
+    df.loc[len(df)] = data_to_add
+
+    data_to_add = {"strategy": strategy,
+                     "n_clients": instance,
+                     "backend": backend,
+                     'client_bool': False,
+                     'client_num': None,
+                     'metric': f"fit_progress_round_{round}",
+                     "metric_value": accuracy,
+                     "timestamp": time_after_starting,
+                     'round': round}
+    df.loc[len(df)] = data_to_add
+
+
 # Function to parse a single log file
-def parse_log_file(file_path):
+def parse_log_file(file_path, backend, strategy, instance,client_instances,server=False,i=0):
     with open(file_path, 'r') as file:
+        fits_i = 1
         for line in file:
+            # print(line)
             # Use regular expressions to extract information from each line
             # Example: match = re.search(your_pattern, line)
             # Process each match according to your needs
-            print(line)
+            # chekc if it contains 
+            # "accuracy" , 
+            # "app_fit: losses_centralized" ,
+            #  "app_fit: metrics_centralized" ,
+            #  "app_fit: metrics_distributed" , 
+            # "app_fit: losses_distributed" ,
+            # "timestamp"
+            # "FL finished"
+            words_we_want = ["FL finished","accuracy", "app_fit: losses_centralized", "app_fit: metrics_centralized", "app_fit: metrics_distributed", "app_fit: losses_distributed", "timestamp"]
+            if any(word in line for word in words_we_want):
+                #lets break the line from "|" and get the 4th element
+                elements = line.split("|")
+                #lets get the 4th element
+                element = elements[3]
+                # print(element)
+                # I want the fit_i to be divided by and then rounded up
+                fits_i_2 = math.ceil(fits_i/2) 
+                if "{'timestamp'" in element:
+                    add_timestamp(element,backend, strategy, instance,client_instances,server,i,fits_i_2)
+                    fits_i+=1
+                if "app_fit" in element:
+                    add_fit_metrics(element,backend, strategy, instance,client_instances,server)
+                if "fit progress" in element:
+                    add_fit_progress(element,backend, strategy, instance,client_instances,server)
+
+                
+            
+# print("Starting log extraction")
 
 # Iterate over directories and log files
 for backend in backends:
     for strategy in strategies:
         for instance in client_instances:
-            directory = f"{local_log_path}/{backend}/{strategy}/{instance}"
-            log_files = glob.glob(os.path.join(directory, "*.log"))
-            for log_file in log_files:
-                parse_log_file(log_file)
+            directory = f"./federated-learning-results/{backend}/{strategy}/{instance}"
+            # print(f"Processing directory {directory}")
+            # #get all the log files in the directory 
+            # files = glob.glob(f"{directory}/*.log")
+            #for some reason this is not working lets try to get the files with os
+            if os.path.isdir(directory):
+                files = os.listdir(directory)
+                # print(files)
+                i=1
+                for file in files:
+                    if file.endswith(".log"):
+                        if "server" in file:
+                            # print(file)
+                            local_log_path = os.path.join(directory, file)
+                            # print(local_log_path)
+                            parse_log_file(local_log_path, backend, strategy, instance,client_instances,server=True)
+                        elif "client" in file:
+                            # print(file)
+                            local_log_path = os.path.join(directory, file)
+                            # print(local_log_path)
+                            parse_log_file(local_log_path, backend, strategy, instance,client_instances,server=False,i=i)
+                            i+=1
+print(df)
 
+df.to_csv("./federated-learning-results/eda_logs.csv", index=False)
