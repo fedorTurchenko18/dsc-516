@@ -1,0 +1,26 @@
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:11:10,383 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+tensorflow-FedAdam-run | DEBUG flwr 2023-12-01 22:11:10,384 | connection.py:42 | ChannelConnectivity.IDLE
+tensorflow-FedAdam-run | DEBUG flwr 2023-12-01 22:11:10,385 | connection.py:42 | ChannelConnectivity.CONNECTING
+tensorflow-FedAdam-run | DEBUG flwr 2023-12-01 22:11:10,418 | connection.py:42 | ChannelConnectivity.READY
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:12:16,004 | client.py:82 | Instance i-06bad6f8935aad0bb : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 12, 16, 3788), 'cpu_utilization': 85.0}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:14:45,317 | client.py:104 | Instance i-06bad6f8935aad0bb : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 14, 45, 317094), 'cpu_utilization': 51.4}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:15:26,991 | client.py:82 | Instance i-06bad6f8935aad0bb : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 15, 26, 991742), 'cpu_utilization': 48.3}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:17:35,911 | client.py:104 | Instance i-06bad6f8935aad0bb : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 17, 35, 910880), 'cpu_utilization': 51.5}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:18:18,428 | client.py:82 | Instance i-06bad6f8935aad0bb : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 18, 18, 427787), 'cpu_utilization': 48.5}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:19:58,451 | client.py:104 | Instance i-06bad6f8935aad0bb : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 19, 58, 451665), 'cpu_utilization': 52.9}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:21:10,987 | client.py:82 | Instance i-06bad6f8935aad0bb : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 21, 10, 987199), 'cpu_utilization': 86.0}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:22:51,456 | client.py:104 | Instance i-06bad6f8935aad0bb : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 22, 51, 456564), 'cpu_utilization': 51.2}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:24:02,882 | client.py:82 | Instance i-06bad6f8935aad0bb : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 24, 2, 882645), 'cpu_utilization': 48.3}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:25:22,980 | client.py:104 | Instance i-06bad6f8935aad0bb : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 25, 22, 973702), 'cpu_utilization': 98.6}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:26:46,869 | client.py:82 | Instance i-06bad6f8935aad0bb : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 26, 46, 869174), 'cpu_utilization': 48.6}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:28:52,496 | client.py:104 | Instance i-06bad6f8935aad0bb : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 28, 52, 496678), 'cpu_utilization': 51.4}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:29:39,542 | client.py:82 | Instance i-06bad6f8935aad0bb : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 29, 39, 542525), 'cpu_utilization': 86.0}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:31:25,109 | client.py:104 | Instance i-06bad6f8935aad0bb : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 31, 25, 108933), 'cpu_utilization': 98.7}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:32:55,736 | client.py:82 | Instance i-06bad6f8935aad0bb : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 32, 55, 735975), 'cpu_utilization': 85.9}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:34:23,509 | client.py:104 | Instance i-06bad6f8935aad0bb : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 34, 23, 508938), 'cpu_utilization': 98.6}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:35:05,645 | client.py:82 | Instance i-06bad6f8935aad0bb : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 35, 5, 645105), 'cpu_utilization': 48.6}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:36:33,838 | client.py:104 | Instance i-06bad6f8935aad0bb : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 36, 33, 838452), 'cpu_utilization': 98.3}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:37:57,555 | client.py:82 | Instance i-06bad6f8935aad0bb : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 37, 57, 555445), 'cpu_utilization': 85.9}
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:39:01,452 | client.py:104 | Instance i-06bad6f8935aad0bb : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 22, 39, 1, 451909), 'cpu_utilization': 98.4}
+tensorflow-FedAdam-run | DEBUG flwr 2023-12-01 22:39:43,537 | connection.py:139 | gRPC channel closed
+tensorflow-FedAdam-run | INFO flwr 2023-12-01 22:39:43,538 | app.py:215 | Disconnect and shut down

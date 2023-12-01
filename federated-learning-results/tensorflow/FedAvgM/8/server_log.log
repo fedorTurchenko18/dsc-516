@@ -1,0 +1,65 @@
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:15:13,860 | app.py:162 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:15:13,867 | app.py:175 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:15:13,871 | server.py:89 | Initializing global parameters
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:15:13,871 | server.py:272 | Using initial parameters provided by strategy
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:15:13,871 | server.py:91 | Evaluating initial parameters
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:15:55,105 | server.py:94 | initial parameters (loss, other metrics): 2.3006434440612793, {'accuracy': 0.6133101582527161}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:15:55,106 | server.py:104 | FL starting
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:15:55,106 | server.py:222 | fit_round 1: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:17:02,526 | server.py:236 | fit_round 1 received 8 results and 0 failures
+tensorflow-FedAvgM-run | WARNING flwr 2023-12-01 21:17:02,760 | fedavgm.py:198 | No fit_metrics_aggregation_fn provided
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:17:25,029 | server.py:125 | fit progress: (1, 2.2387642860412598, {'accuracy': 0.5769230723381042}, 89.92300369800023)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:17:25,029 | server.py:173 | evaluate_round 1: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:18:28,551 | server.py:187 | evaluate_round 1 received 8 results and 0 failures
+tensorflow-FedAvgM-run | WARNING flwr 2023-12-01 21:18:28,552 | fedavg.py:273 | No evaluate_metrics_aggregation_fn provided
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:18:28,552 | server.py:222 | fit_round 2: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:19:33,407 | server.py:236 | fit_round 2 received 8 results and 0 failures
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:20:14,809 | server.py:125 | fit progress: (2, 1.8399921655654907, {'accuracy': 0.574305534362793}, 259.7031163659999)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:20:14,809 | server.py:173 | evaluate_round 2: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:21:19,943 | server.py:187 | evaluate_round 2 received 8 results and 0 failures
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:21:19,944 | server.py:222 | fit_round 3: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:22:28,052 | server.py:236 | fit_round 3 received 8 results and 0 failures
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:23:09,467 | server.py:125 | fit progress: (3, 1.4792510271072388, {'accuracy': 0.5731481313705444}, 434.36101960299993)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:23:09,467 | server.py:173 | evaluate_round 3: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:23:55,474 | server.py:187 | evaluate_round 3 received 8 results and 0 failures
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:23:55,474 | server.py:222 | fit_round 4: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:25:02,217 | server.py:236 | fit_round 4 received 8 results and 0 failures
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:25:43,637 | server.py:125 | fit progress: (4, 1.157979965209961, {'accuracy': 0.5810763835906982}, 588.5312703250002)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:25:43,638 | server.py:173 | evaluate_round 4: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:26:47,871 | server.py:187 | evaluate_round 4 received 8 results and 0 failures
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:26:47,871 | server.py:222 | fit_round 5: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:27:55,574 | server.py:236 | fit_round 5 received 8 results and 0 failures
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:28:18,137 | server.py:125 | fit progress: (5, 0.9935857653617859, {'accuracy': 0.5888888835906982}, 743.0306109500002)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:28:18,141 | server.py:173 | evaluate_round 5: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:29:22,529 | server.py:187 | evaluate_round 5 received 8 results and 0 failures
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:29:22,529 | server.py:222 | fit_round 6: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:30:30,585 | server.py:236 | fit_round 6 received 8 results and 0 failures
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:31:12,000 | server.py:125 | fit progress: (6, 0.8382343649864197, {'accuracy': 0.5983024835586548}, 916.8942486269998)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:31:12,001 | server.py:173 | evaluate_round 6: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:32:17,292 | server.py:187 | evaluate_round 6 received 8 results and 0 failures
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:32:17,293 | server.py:222 | fit_round 7: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:33:24,590 | server.py:236 | fit_round 7 received 8 results and 0 failures
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:33:47,056 | server.py:125 | fit progress: (7, 0.7263577580451965, {'accuracy': 0.6084795594215393}, 1071.9497444919998)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:33:47,056 | server.py:173 | evaluate_round 7: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:34:52,124 | server.py:187 | evaluate_round 7 received 8 results and 0 failures
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:34:52,124 | server.py:222 | fit_round 8: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:35:59,960 | server.py:236 | fit_round 8 received 8 results and 0 failures
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:36:22,353 | server.py:125 | fit progress: (8, 0.6658819317817688, {'accuracy': 0.6188889145851135}, 1227.2468186699998)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:36:22,353 | server.py:173 | evaluate_round 8: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:37:26,317 | server.py:187 | evaluate_round 8 received 8 results and 0 failures
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:37:26,317 | server.py:222 | fit_round 9: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:38:44,974 | server.py:236 | fit_round 9 received 8 results and 0 failures
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:39:26,379 | server.py:125 | fit progress: (9, 0.6140070557594299, {'accuracy': 0.6289682388305664}, 1411.2729721639998)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:39:26,379 | server.py:173 | evaluate_round 9: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:40:31,823 | server.py:187 | evaluate_round 9 received 8 results and 0 failures
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:40:31,823 | server.py:222 | fit_round 10: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:41:39,008 | server.py:236 | fit_round 10 received 8 results and 0 failures
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:42:01,366 | server.py:125 | fit progress: (10, 0.625682532787323, {'accuracy': 0.6375631093978882}, 1566.259655379)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:42:01,366 | server.py:173 | evaluate_round 10: strategy sampled 8 clients (out of 8)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:43:05,345 | server.py:187 | evaluate_round 10 received 8 results and 0 failures
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:43:05,345 | server.py:153 | FL finished in 1630.23953875
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:43:05,346 | app.py:225 | app_fit: losses_distributed [(1, 2.2387642860412598), (2, 1.8399921655654907), (3, 1.4792510271072388), (4, 1.157979965209961), (5, 0.9935857653617859), (6, 0.8382343649864197), (7, 0.7263577580451965), (8, 0.6658819317817688), (9, 0.6140070557594299), (10, 0.625682532787323)]
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:43:05,361 | app.py:226 | app_fit: metrics_distributed_fit {}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:43:05,361 | app.py:227 | app_fit: metrics_distributed {}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:43:05,368 | app.py:228 | app_fit: losses_centralized [(0, 2.3006434440612793), (1, 2.2387642860412598), (2, 1.8399921655654907), (3, 1.4792510271072388), (4, 1.157979965209961), (5, 0.9935857653617859), (6, 0.8382343649864197), (7, 0.7263577580451965), (8, 0.6658819317817688), (9, 0.6140070557594299), (10, 0.625682532787323)]
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:43:05,377 | app.py:229 | app_fit: metrics_centralized {'accuracy': [(0, 0.6133101582527161), (1, 0.5769230723381042), (2, 0.574305534362793), (3, 0.5731481313705444), (4, 0.5810763835906982), (5, 0.5888888835906982), (6, 0.5983024835586548), (7, 0.6084795594215393), (8, 0.6188889145851135), (9, 0.6289682388305664), (10, 0.6375631093978882)]}
