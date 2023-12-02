@@ -1,0 +1,57 @@
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:15:13,852 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:15:13,854 | connection.py:42 | ChannelConnectivity.IDLE
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:15:13,854 | connection.py:42 | ChannelConnectivity.CONNECTING
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:15:13,870 | connection.py:42 | ChannelConnectivity.TRANSIENT_FAILURE
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:15:14,073 | connection.py:139 | gRPC channel closed
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:15:24,084 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:15:24,084 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:15:24,109 | connection.py:42 | ChannelConnectivity.IDLE
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:15:24,109 | connection.py:42 | ChannelConnectivity.IDLE
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:15:24,110 | connection.py:42 | ChannelConnectivity.CONNECTING
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:15:24,110 | connection.py:42 | ChannelConnectivity.CONNECTING
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:15:24,126 | connection.py:42 | ChannelConnectivity.READY
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:15:24,126 | connection.py:42 | ChannelConnectivity.READY
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:16:19,460 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 16, 19, 460251), 'cpu_utilization': 85.2}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:16:19,460 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 16, 19, 460251), 'cpu_utilization': 85.2}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:17:47,309 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 17, 47, 309750), 'cpu_utilization': 98.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:17:47,309 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 17, 47, 309750), 'cpu_utilization': 98.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:18:50,293 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 18, 50, 293503), 'cpu_utilization': 84.1}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:18:50,293 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 18, 50, 293503), 'cpu_utilization': 84.1}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:20:56,070 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 20, 56, 70731), 'cpu_utilization': 51.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:20:56,070 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 20, 56, 70731), 'cpu_utilization': 51.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:21:44,320 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 21, 44, 320326), 'cpu_utilization': 85.4}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:21:44,320 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 21, 44, 320326), 'cpu_utilization': 85.4}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:23:54,038 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 23, 54, 38577), 'cpu_utilization': 98.2}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:23:54,038 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 23, 54, 38577), 'cpu_utilization': 98.2}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:25:01,109 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 25, 1, 109547), 'cpu_utilization': 50.0}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:25:01,109 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 25, 1, 109547), 'cpu_utilization': 50.0}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:26:05,257 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 26, 5, 257032), 'cpu_utilization': 98.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:26:05,257 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 26, 5, 257032), 'cpu_utilization': 98.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:27:28,977 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 27, 28, 977105), 'cpu_utilization': 49.9}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:27:28,977 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 27, 28, 977105), 'cpu_utilization': 49.9}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:28:59,352 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 28, 59, 352072), 'cpu_utilization': 53.1}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:28:59,352 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 28, 59, 352072), 'cpu_utilization': 53.1}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:29:47,490 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 29, 47, 489955), 'cpu_utilization': 85.6}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:29:47,490 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 29, 47, 489955), 'cpu_utilization': 85.6}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:32:16,131 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 32, 16, 131171), 'cpu_utilization': 52.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:32:16,131 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 32, 16, 131171), 'cpu_utilization': 52.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:32:58,546 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 32, 58, 546248), 'cpu_utilization': 50.6}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:32:58,546 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 32, 58, 546248), 'cpu_utilization': 50.6}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:34:28,312 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 34, 28, 312701), 'cpu_utilization': 51.4}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:34:28,312 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 34, 28, 312701), 'cpu_utilization': 51.4}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:35:16,678 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 35, 16, 678144), 'cpu_utilization': 85.4}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:35:16,678 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 35, 16, 678144), 'cpu_utilization': 85.4}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:37:03,822 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 37, 3, 822048), 'cpu_utilization': 51.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:37:03,822 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 37, 3, 822048), 'cpu_utilization': 51.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:38:07,609 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 38, 7, 608857), 'cpu_utilization': 50.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:38:07,609 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 38, 7, 608857), 'cpu_utilization': 50.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:40:07,562 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 40, 7, 562280), 'cpu_utilization': 51.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:40:07,562 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 40, 7, 562280), 'cpu_utilization': 51.3}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:40:56,252 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 40, 56, 252461), 'cpu_utilization': 85.2}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:40:56,252 | client.py:82 | Instance i-03677de65ff3a5650 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 40, 56, 252461), 'cpu_utilization': 85.2}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:42:22,681 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 42, 22, 680729), 'cpu_utilization': 98.7}
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:42:22,681 | client.py:104 | Instance i-03677de65ff3a5650 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 1, 21, 42, 22, 680729), 'cpu_utilization': 98.7}
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:43:05,410 | connection.py:139 | gRPC channel closed
+tensorflow-FedAvgM-run | DEBUG flwr 2023-12-01 21:43:05,410 | connection.py:139 | gRPC channel closed
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:43:05,411 | app.py:215 | Disconnect and shut down
+tensorflow-FedAvgM-run | INFO flwr 2023-12-01 21:43:05,411 | app.py:215 | Disconnect and shut down
