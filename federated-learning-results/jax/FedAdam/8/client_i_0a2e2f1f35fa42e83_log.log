@@ -1,0 +1,54 @@
+jax-FedAdam-run | INFO flwr 2023-12-02 11:52:37,623 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:52:37,628 | connection.py:42 | ChannelConnectivity.IDLE
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:52:37,632 | connection.py:42 | ChannelConnectivity.CONNECTING
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:52:37,835 | connection.py:139 | gRPC channel closed
+jax-FedAdam-run | INFO flwr 2023-12-02 11:52:47,846 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+jax-FedAdam-run | INFO flwr 2023-12-02 11:52:47,846 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:52:47,877 | connection.py:42 | ChannelConnectivity.IDLE
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:52:47,877 | connection.py:42 | ChannelConnectivity.IDLE
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:52:47,878 | connection.py:42 | ChannelConnectivity.READY
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:52:47,878 | connection.py:42 | ChannelConnectivity.READY
+jax-FedAdam-run | INFO flwr 2023-12-02 11:54:04,238 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 54, 4, 238495), 'cpu_utilization': 87.3}
+jax-FedAdam-run | INFO flwr 2023-12-02 11:54:04,238 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 54, 4, 238495), 'cpu_utilization': 87.3}
+jax-FedAdam-run | INFO flwr 2023-12-02 11:55:35,611 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 55, 35, 611597), 'cpu_utilization': 98.8}
+jax-FedAdam-run | INFO flwr 2023-12-02 11:55:35,611 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 55, 35, 611597), 'cpu_utilization': 98.8}
+jax-FedAdam-run | INFO flwr 2023-12-02 11:57:24,116 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 57, 24, 116634), 'cpu_utilization': 87.5}
+jax-FedAdam-run | INFO flwr 2023-12-02 11:57:24,116 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 57, 24, 116634), 'cpu_utilization': 87.5}
+jax-FedAdam-run | INFO flwr 2023-12-02 11:58:39,101 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 58, 39, 100862), 'cpu_utilization': 98.9}
+jax-FedAdam-run | INFO flwr 2023-12-02 11:58:39,101 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 58, 39, 100862), 'cpu_utilization': 98.9}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:00:06,212 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 0, 6, 212366), 'cpu_utilization': 87.5}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:00:06,212 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 0, 6, 212366), 'cpu_utilization': 87.5}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:02:19,211 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 2, 19, 211681), 'cpu_utilization': 76.3}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:02:19,211 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 2, 19, 211681), 'cpu_utilization': 76.3}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:03:04,824 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 3, 4, 824200), 'cpu_utilization': 87.6}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:03:04,824 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 3, 4, 824200), 'cpu_utilization': 87.6}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:04:17,245 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 4, 17, 244978), 'cpu_utilization': 99.1}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:04:17,245 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 4, 17, 244978), 'cpu_utilization': 99.1}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:06:15,129 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 6, 15, 129423), 'cpu_utilization': 87.6}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:06:15,129 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 6, 15, 129423), 'cpu_utilization': 87.6}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:07:52,295 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 7, 52, 295585), 'cpu_utilization': 77.0}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:07:52,295 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 7, 52, 295585), 'cpu_utilization': 77.0}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:08:38,446 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 8, 38, 446416), 'cpu_utilization': 87.5}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:08:38,446 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 8, 38, 446416), 'cpu_utilization': 87.5}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:10:19,280 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 10, 19, 280209), 'cpu_utilization': 76.6}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:10:19,280 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 10, 19, 280209), 'cpu_utilization': 76.6}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:11:45,929 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 11, 45, 928997), 'cpu_utilization': 87.6}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:11:45,929 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 11, 45, 928997), 'cpu_utilization': 87.6}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:12:58,425 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 12, 58, 425291), 'cpu_utilization': 98.8}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:12:58,425 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 12, 58, 425291), 'cpu_utilization': 98.8}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:14:24,791 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 14, 24, 791581), 'cpu_utilization': 87.6}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:14:24,791 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 14, 24, 791581), 'cpu_utilization': 87.6}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:15:55,519 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 15, 55, 519743), 'cpu_utilization': 99.1}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:15:55,519 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 15, 55, 519743), 'cpu_utilization': 99.1}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:17:23,439 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 17, 23, 439117), 'cpu_utilization': 87.6}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:17:23,439 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 17, 23, 439117), 'cpu_utilization': 87.6}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:19:27,518 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 19, 27, 517958), 'cpu_utilization': 99.1}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:19:27,518 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 19, 27, 517958), 'cpu_utilization': 99.1}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:20:13,374 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 20, 13, 374272), 'cpu_utilization': 87.5}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:20:13,374 | client.py:82 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 20, 13, 374272), 'cpu_utilization': 87.5}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:21:45,032 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 21, 45, 32591), 'cpu_utilization': 99.0}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:21:45,032 | client.py:104 | Instance i-0a2e2f1f35fa42e83 : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 12, 21, 45, 32591), 'cpu_utilization': 99.0}
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:22:27,761 | connection.py:139 | gRPC channel closed
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:22:27,761 | connection.py:139 | gRPC channel closed
+jax-FedAdam-run | INFO flwr 2023-12-02 12:22:27,761 | app.py:215 | Disconnect and shut down
+jax-FedAdam-run | INFO flwr 2023-12-02 12:22:27,761 | app.py:215 | Disconnect and shut down
