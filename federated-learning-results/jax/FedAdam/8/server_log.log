@@ -1,0 +1,65 @@
+jax-FedAdam-run | INFO flwr 2023-12-02 11:52:37,664 | app.py:162 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+jax-FedAdam-run | INFO flwr 2023-12-02 11:52:37,666 | app.py:175 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+jax-FedAdam-run | INFO flwr 2023-12-02 11:52:37,666 | server.py:89 | Initializing global parameters
+jax-FedAdam-run | INFO flwr 2023-12-02 11:52:37,666 | server.py:272 | Using initial parameters provided by strategy
+jax-FedAdam-run | INFO flwr 2023-12-02 11:52:37,666 | server.py:91 | Evaluating initial parameters
+jax-FedAdam-run | INFO flwr 2023-12-02 11:53:18,931 | server.py:94 | initial parameters (loss, other metrics): 2.341738224029541, {'accuracy': 0.4074346423149109}
+jax-FedAdam-run | INFO flwr 2023-12-02 11:53:18,931 | server.py:104 | FL starting
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:53:18,931 | server.py:222 | fit_round 1: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:54:22,091 | server.py:236 | fit_round 1 received 8 results and 0 failures
+jax-FedAdam-run | WARNING flwr 2023-12-02 11:54:22,327 | fedavg.py:242 | No fit_metrics_aggregation_fn provided
+jax-FedAdam-run | INFO flwr 2023-12-02 11:55:03,617 | server.py:125 | fit progress: (1, 48807.46875, {'accuracy': 0.39888888597488403}, 104.685754739)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:55:03,618 | server.py:173 | evaluate_round 1: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:56:08,708 | server.py:187 | evaluate_round 1 received 8 results and 0 failures
+jax-FedAdam-run | WARNING flwr 2023-12-02 11:56:08,708 | fedavg.py:273 | No evaluate_metrics_aggregation_fn provided
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:56:08,708 | server.py:222 | fit_round 2: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:57:25,412 | server.py:236 | fit_round 2 received 8 results and 0 failures
+jax-FedAdam-run | INFO flwr 2023-12-02 11:58:06,893 | server.py:125 | fit progress: (2, 1778349.625, {'accuracy': 0.39537036418914795}, 287.96165122100047)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:58:06,893 | server.py:173 | evaluate_round 2: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:59:21,440 | server.py:187 | evaluate_round 2 received 8 results and 0 failures
+jax-FedAdam-run | DEBUG flwr 2023-12-02 11:59:21,440 | server.py:222 | fit_round 3: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:00:24,665 | server.py:236 | fit_round 3 received 8 results and 0 failures
+jax-FedAdam-run | INFO flwr 2023-12-02 12:01:06,142 | server.py:125 | fit progress: (3, 21413044.0, {'accuracy': 0.39204204082489014}, 467.210251726)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:01:06,142 | server.py:173 | evaluate_round 3: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:02:20,340 | server.py:187 | evaluate_round 3 received 8 results and 0 failures
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:02:20,340 | server.py:222 | fit_round 4: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:03:22,185 | server.py:236 | fit_round 4 received 8 results and 0 failures
+jax-FedAdam-run | INFO flwr 2023-12-02 12:03:45,222 | server.py:125 | fit progress: (4, 121994176.0, {'accuracy': 0.3888888955116272}, 626.2909731890004)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:03:45,227 | server.py:173 | evaluate_round 4: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:04:59,395 | server.py:187 | evaluate_round 4 received 8 results and 0 failures
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:04:59,395 | server.py:222 | fit_round 5: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:06:16,351 | server.py:236 | fit_round 5 received 8 results and 0 failures
+jax-FedAdam-run | INFO flwr 2023-12-02 12:06:38,940 | server.py:125 | fit progress: (5, 423990496.0, {'accuracy': 0.3858974277973175}, 800.0084309490003)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:06:38,940 | server.py:173 | evaluate_round 5: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:07:53,766 | server.py:187 | evaluate_round 5 received 8 results and 0 failures
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:07:53,767 | server.py:222 | fit_round 6: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:08:56,424 | server.py:236 | fit_round 6 received 8 results and 0 failures
+jax-FedAdam-run | INFO flwr 2023-12-02 12:09:37,886 | server.py:125 | fit progress: (6, 1079210368.0, {'accuracy': 0.38305556774139404}, 978.954450278)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:09:37,886 | server.py:173 | evaluate_round 6: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:11:01,143 | server.py:187 | evaluate_round 6 received 8 results and 0 failures
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:11:01,143 | server.py:222 | fit_round 7: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:12:03,583 | server.py:236 | fit_round 7 received 8 results and 0 failures
+jax-FedAdam-run | INFO flwr 2023-12-02 12:12:26,072 | server.py:125 | fit progress: (7, 2231161600.0, {'accuracy': 0.38035231828689575}, 1147.1404136200008)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:12:26,072 | server.py:173 | evaluate_round 7: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:13:39,801 | server.py:187 | evaluate_round 7 received 8 results and 0 failures
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:13:39,802 | server.py:222 | fit_round 8: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:14:42,056 | server.py:236 | fit_round 8 received 8 results and 0 failures
+jax-FedAdam-run | INFO flwr 2023-12-02 12:15:23,499 | server.py:125 | fit progress: (8, 3998845696.0, {'accuracy': 0.3777777850627899}, 1324.5675388020009)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:15:23,499 | server.py:173 | evaluate_round 8: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:16:38,795 | server.py:187 | evaluate_round 8 received 8 results and 0 failures
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:16:38,795 | server.py:222 | fit_round 9: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:17:41,339 | server.py:236 | fit_round 9 received 8 results and 0 failures
+jax-FedAdam-run | INFO flwr 2023-12-02 12:18:22,783 | server.py:125 | fit progress: (9, 6435907072.0, {'accuracy': 0.37532299757003784}, 1503.8514090750004)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:18:22,783 | server.py:173 | evaluate_round 9: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:19:28,729 | server.py:187 | evaluate_round 9 received 8 results and 0 failures
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:19:28,730 | server.py:222 | fit_round 10: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:20:31,430 | server.py:236 | fit_round 10 received 8 results and 0 failures
+jax-FedAdam-run | INFO flwr 2023-12-02 12:21:12,877 | server.py:125 | fit progress: (10, 9539681280.0, {'accuracy': 0.3729797899723053}, 1673.9459541920005)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:21:12,878 | server.py:173 | evaluate_round 10: strategy sampled 8 clients (out of 8)
+jax-FedAdam-run | DEBUG flwr 2023-12-02 12:22:27,708 | server.py:187 | evaluate_round 10 received 8 results and 0 failures
+jax-FedAdam-run | INFO flwr 2023-12-02 12:22:27,708 | server.py:153 | FL finished in 1748.7766023050008
+jax-FedAdam-run | INFO flwr 2023-12-02 12:22:27,715 | app.py:225 | app_fit: losses_distributed [(1, 14.39947509765625), (2, 11.76008129119873), (3, 11.76008129119873), (4, 11.76008129119873), (5, 11.76008129119873), (6, 11.76008129119873), (7, 11.76008129119873), (8, 11.76008129119873), (9, 11.76008129119873), (10, 11.76008129119873)]
+jax-FedAdam-run | INFO flwr 2023-12-02 12:22:27,724 | app.py:226 | app_fit: metrics_distributed_fit {}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:22:27,728 | app.py:227 | app_fit: metrics_distributed {}
+jax-FedAdam-run | INFO flwr 2023-12-02 12:22:27,731 | app.py:228 | app_fit: losses_centralized [(0, 2.341738224029541), (1, 48807.46875), (2, 1778349.625), (3, 21413044.0), (4, 121994176.0), (5, 423990496.0), (6, 1079210368.0), (7, 2231161600.0), (8, 3998845696.0), (9, 6435907072.0), (10, 9539681280.0)]
+jax-FedAdam-run | INFO flwr 2023-12-02 12:22:27,739 | app.py:229 | app_fit: metrics_centralized {'accuracy': [(0, 0.4074346423149109), (1, 0.39888888597488403), (2, 0.39537036418914795), (3, 0.39204204082489014), (4, 0.3888888955116272), (5, 0.3858974277973175), (6, 0.38305556774139404), (7, 0.38035231828689575), (8, 0.3777777850627899), (9, 0.37532299757003784), (10, 0.3729797899723053)]}

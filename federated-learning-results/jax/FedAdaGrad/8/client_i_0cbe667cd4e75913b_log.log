@@ -1,0 +1,26 @@
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:23:45,996 | grpc.py:49 | Opened insecure gRPC connection (no certificates were passed)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-02 11:23:45,998 | connection.py:42 | ChannelConnectivity.IDLE
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-02 11:23:45,998 | connection.py:42 | ChannelConnectivity.CONNECTING
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-02 11:23:46,007 | connection.py:42 | ChannelConnectivity.READY
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:25:29,100 | client.py:82 | Instance i-0cbe667cd4e75913b : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 25, 29, 100435), 'cpu_utilization': 87.1}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:26:53,110 | client.py:104 | Instance i-0cbe667cd4e75913b : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 26, 53, 109909), 'cpu_utilization': 73.7}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:27:47,000 | client.py:82 | Instance i-0cbe667cd4e75913b : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 27, 47, 23), 'cpu_utilization': 87.2}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:29:37,698 | client.py:104 | Instance i-0cbe667cd4e75913b : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 29, 37, 698604), 'cpu_utilization': 75.6}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:30:40,394 | client.py:82 | Instance i-0cbe667cd4e75913b : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 30, 40, 394272), 'cpu_utilization': 87.3}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:32:24,212 | client.py:104 | Instance i-0cbe667cd4e75913b : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 32, 24, 212037), 'cpu_utilization': 99.3}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:33:28,310 | client.py:82 | Instance i-0cbe667cd4e75913b : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 33, 28, 310395), 'cpu_utilization': 87.2}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:35:23,108 | client.py:104 | Instance i-0cbe667cd4e75913b : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 35, 23, 108075), 'cpu_utilization': 75.3}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:37:07,025 | client.py:82 | Instance i-0cbe667cd4e75913b : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 37, 7, 25632), 'cpu_utilization': 87.4}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:38:53,636 | client.py:104 | Instance i-0cbe667cd4e75913b : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 38, 53, 636246), 'cpu_utilization': 99.1}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:40:05,321 | client.py:82 | Instance i-0cbe667cd4e75913b : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 40, 5, 321493), 'cpu_utilization': 87.3}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:41:33,300 | client.py:104 | Instance i-0cbe667cd4e75913b : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 41, 33, 300003), 'cpu_utilization': 99.1}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:42:04,879 | client.py:82 | Instance i-0cbe667cd4e75913b : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 42, 4, 879528), 'cpu_utilization': 87.3}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:43:59,914 | client.py:104 | Instance i-0cbe667cd4e75913b : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 43, 59, 913970), 'cpu_utilization': 76.5}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:44:53,789 | client.py:82 | Instance i-0cbe667cd4e75913b : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 44, 53, 789777), 'cpu_utilization': 87.4}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:46:30,029 | client.py:104 | Instance i-0cbe667cd4e75913b : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 46, 30, 29576), 'cpu_utilization': 73.0}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:48:04,728 | client.py:82 | Instance i-0cbe667cd4e75913b : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 48, 4, 727925), 'cpu_utilization': 87.3}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:49:47,010 | client.py:104 | Instance i-0cbe667cd4e75913b : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 49, 47, 10614), 'cpu_utilization': 99.3}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:50:28,347 | client.py:82 | Instance i-0cbe667cd4e75913b : CPU usage history during fit() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 50, 28, 347739), 'cpu_utilization': 87.2}
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:52:36,439 | client.py:104 | Instance i-0cbe667cd4e75913b : CPU usage history during evaluate() : {'timestamp': datetime.datetime(2023, 12, 2, 11, 52, 36, 438873), 'cpu_utilization': 73.0}
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-02 11:52:37,460 | connection.py:139 | gRPC channel closed
+jax-FedAdaGrad-run | INFO flwr 2023-12-02 11:52:37,460 | app.py:215 | Disconnect and shut down
