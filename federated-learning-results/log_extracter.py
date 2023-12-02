@@ -108,7 +108,7 @@ import pandas as pd
 
 local_log_path = "."
 backends = ["jax", "tensorflow", "torch"]
-strategies = ["FedAdaGard", "FedAvg", "FedAdam", "FedAvgM"]
+strategies = [ "FedAvg", "FedAdam", "FedAvgM","FedAdaGrad"]
 client_instances = ["2", "5"]
 
 df = pd.DataFrame(columns=["strategy", "n_clients", "backend",'client_bool','client_num', "metric", "metric_value", "timestamp",'round'])
@@ -175,7 +175,7 @@ def add_fit_metrics(element,backend, strategy, instance,client_instances,server=
                    "backend": backend,
                    'client_bool':False,
                    'client_num':None, 
-                   'metric': f"losses_distributed_round_{array[i][0]}",
+                   'metric': f"losses_distributed",
                    "metric_value": array[i][1], 
                    "timestamp": None,
                    'round':array[i][0]}
@@ -197,7 +197,7 @@ def add_fit_metrics(element,backend, strategy, instance,client_instances,server=
                    "backend": backend,
                    'client_bool':False,
                    'client_num':None, 
-                   'metric': f"losses_centralized_round_{array[i][0]}",
+                   'metric': f"losses_centralized",
                    "metric_value": array[i][1], 
                    "timestamp": None,
                    'round':array[i][0]}
@@ -217,7 +217,7 @@ def add_fit_metrics(element,backend, strategy, instance,client_instances,server=
                    "backend": backend,
                    'client_bool':False,
                    'client_num':None, 
-                   'metric': f"metrics_centralized_round_{accuracy_array[i][0]}",
+                   'metric': f"metrics_centralized",
                    "metric_value": accuracy_array[i][1], 
                    "timestamp": None,
                    'round':accuracy_array[i][0]}
@@ -230,8 +230,8 @@ def add_fit_progress(element,backend, strategy, instance,client_instances,server
     before_parenthesis = after_parenthesis.split(")")[0]
     # print(before_parenthesis)
     split_by_comma = before_parenthesis.split(",")
-    round = split_by_comma[0]
-    # print(round)
+    round_1 = split_by_comma[0]
+    print(round_1)
     loss = split_by_comma[1]
     # print(loss)
     right_of_dict = split_by_comma[2]
@@ -245,23 +245,23 @@ def add_fit_progress(element,backend, strategy, instance,client_instances,server
     data_to_add = {"strategy": strategy, 
                    "n_clients": instance, 
                    "backend": backend,
-                   'client_bool':False,
+                   'client_bool':server,
                    'client_num':None, 
-                   'metric': f"fit_progress_round_{round}",
+                   'metric': f"fit_progress_loss",
                    "metric_value": loss, 
                    "timestamp": time_after_starting,
-                   'round':round}
+                   'round':round_1}
     df.loc[len(df)] = data_to_add
 
     data_to_add = {"strategy": strategy,
                      "n_clients": instance,
                      "backend": backend,
-                     'client_bool': False,
+                     'client_bool': server,
                      'client_num': None,
-                     'metric': f"fit_progress_round_{round}",
+                     'metric': f"fit_progress_accuracy",
                      "metric_value": accuracy,
                      "timestamp": time_after_starting,
-                     'round': round}
+                     'round': round_1}
     df.loc[len(df)] = data_to_add
 
 
@@ -269,7 +269,10 @@ def add_fit_progress(element,backend, strategy, instance,client_instances,server
 def parse_log_file(file_path, backend, strategy, instance,client_instances,server=False,i=0):
     with open(file_path, 'r') as file:
         fits_i = 1
+        lines_seen = set() # holds lines already seen
         for line in file:
+            if line in lines_seen: continue
+            lines_seen.add(line)
             # print(line)
             # Use regular expressions to extract information from each line
             # Example: match = re.search(your_pattern, line)
@@ -295,9 +298,9 @@ def parse_log_file(file_path, backend, strategy, instance,client_instances,serve
                     add_timestamp(element,backend, strategy, instance,client_instances,server,i,fits_i_2)
                     fits_i+=1
                 if "app_fit" in element:
-                    add_fit_metrics(element,backend, strategy, instance,client_instances,server)
+                    add_fit_metrics(element,backend, strategy, instance,client_instances,server=server)
                 if "fit progress" in element:
-                    add_fit_progress(element,backend, strategy, instance,client_instances,server)
+                    add_fit_progress(element,backend, strategy, instance,client_instances,server=server)
 
                 
             
@@ -330,5 +333,8 @@ for backend in backends:
                             parse_log_file(local_log_path, backend, strategy, instance,client_instances,server=False,i=i)
                             i+=1
 print(df)
+
+#sort by strategy, n_clients, backend, round
+# df = df.sort_values(by=['strategy', 'n_clients', 'backend','round'])
 
 df.to_csv("./federated-learning-results/eda_logs.csv", index=False)

@@ -1,0 +1,65 @@
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:31:50,590 | app.py:162 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:31:50,617 | app.py:175 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:31:50,617 | server.py:89 | Initializing global parameters
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:31:50,618 | server.py:272 | Using initial parameters provided by strategy
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:31:50,618 | server.py:91 | Evaluating initial parameters
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:32:31,867 | server.py:94 | initial parameters (loss, other metrics): 2.3872830867767334, {'accuracy': 0.7261473536491394}
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:32:31,867 | server.py:104 | FL starting
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:32:31,867 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:34:42,469 | server.py:236 | fit_round 1 received 2 results and 0 failures
+jax-FedAdaGrad-run | WARNING flwr 2023-12-01 21:34:42,535 | fedavg.py:242 | No fit_metrics_aggregation_fn provided
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:35:04,986 | server.py:125 | fit progress: (1, 35612.94921875, {'accuracy': 0.6987268328666687}, 153.11870680599986)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:35:04,986 | server.py:173 | evaluate_round 1: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:35:47,338 | server.py:187 | evaluate_round 1 received 2 results and 0 failures
+jax-FedAdaGrad-run | WARNING flwr 2023-12-01 21:35:47,338 | fedavg.py:273 | No evaluate_metrics_aggregation_fn provided
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:35:47,338 | server.py:222 | fit_round 2: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:37:56,264 | server.py:236 | fit_round 2 received 2 results and 0 failures
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:38:18,837 | server.py:125 | fit progress: (2, 182143.359375, {'accuracy': 0.6735000014305115}, 346.9702283589995)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:38:18,843 | server.py:173 | evaluate_round 2: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:39:00,826 | server.py:187 | evaluate_round 2 received 2 results and 0 failures
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:39:00,827 | server.py:222 | fit_round 3: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:41:09,407 | server.py:236 | fit_round 3 received 2 results and 0 failures
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:41:50,715 | server.py:125 | fit progress: (3, 195039.375, {'accuracy': 0.6500534415245056}, 558.847636128)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:41:50,715 | server.py:173 | evaluate_round 3: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:42:33,166 | server.py:187 | evaluate_round 3 received 2 results and 0 failures
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:42:33,167 | server.py:222 | fit_round 4: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:44:42,429 | server.py:236 | fit_round 4 received 2 results and 0 failures
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:45:23,784 | server.py:125 | fit progress: (4, 2649199.75, {'accuracy': 0.6284465193748474}, 771.9164603769996)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:45:23,784 | server.py:173 | evaluate_round 4: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:46:06,164 | server.py:187 | evaluate_round 4 received 2 results and 0 failures
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:46:06,164 | server.py:222 | fit_round 5: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:48:16,071 | server.py:236 | fit_round 5 received 2 results and 0 failures
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:48:38,796 | server.py:125 | fit progress: (5, 4436417.5, {'accuracy': 0.6083829402923584}, 966.9292190269998)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:48:38,802 | server.py:173 | evaluate_round 5: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:49:21,136 | server.py:187 | evaluate_round 5 received 2 results and 0 failures
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:49:21,136 | server.py:222 | fit_round 6: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:51:30,559 | server.py:236 | fit_round 6 received 2 results and 0 failures
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:51:53,265 | server.py:125 | fit progress: (6, 4500008.0, {'accuracy': 0.5897030830383301}, 1161.397851834)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:51:53,266 | server.py:173 | evaluate_round 6: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:52:35,933 | server.py:187 | evaluate_round 6 received 2 results and 0 failures
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:52:35,933 | server.py:222 | fit_round 7: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:54:44,235 | server.py:236 | fit_round 7 received 2 results and 0 failures
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:55:25,539 | server.py:125 | fit progress: (7, 4501809.5, {'accuracy': 0.572268545627594}, 1373.6714295749998)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:55:25,539 | server.py:173 | evaluate_round 7: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:56:08,016 | server.py:187 | evaluate_round 7 received 2 results and 0 failures
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:56:08,016 | server.py:222 | fit_round 8: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:58:15,877 | server.py:236 | fit_round 8 received 2 results and 0 failures
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 21:58:38,691 | server.py:125 | fit progress: (8, 4501835.5, {'accuracy': 0.5559588074684143}, 1566.82347554)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:58:38,696 | server.py:173 | evaluate_round 8: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:59:21,287 | server.py:187 | evaluate_round 8 received 2 results and 0 failures
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 21:59:21,287 | server.py:222 | fit_round 9: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 22:01:29,872 | server.py:236 | fit_round 9 received 2 results and 0 failures
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 22:02:11,197 | server.py:125 | fit progress: (9, 4501831.5, {'accuracy': 0.5406684279441833}, 1779.329663218)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 22:02:11,197 | server.py:173 | evaluate_round 9: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 22:02:53,117 | server.py:187 | evaluate_round 9 received 2 results and 0 failures
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 22:02:53,117 | server.py:222 | fit_round 10: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 22:05:02,032 | server.py:236 | fit_round 10 received 2 results and 0 failures
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 22:05:43,343 | server.py:125 | fit progress: (10, 4501837.0, {'accuracy': 0.5263047218322754}, 1991.476032867)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 22:05:43,344 | server.py:173 | evaluate_round 10: strategy sampled 2 clients (out of 2)
+jax-FedAdaGrad-run | DEBUG flwr 2023-12-01 22:06:16,451 | server.py:187 | evaluate_round 10 received 2 results and 0 failures
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 22:06:16,451 | server.py:153 | FL finished in 2024.5836348439998
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 22:06:16,454 | app.py:225 | app_fit: losses_distributed [(1, 15.045021057128906), (2, 15.04502010345459), (3, 15.1107177734375), (4, 15.066919326782227), (5, 15.066919326782227), (6, 15.066919326782227), (7, 15.066919326782227), (8, 15.066919326782227), (9, 15.066919326782227), (10, 15.066919326782227)]
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 22:06:16,454 | app.py:226 | app_fit: metrics_distributed_fit {}
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 22:06:16,454 | app.py:227 | app_fit: metrics_distributed {}
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 22:06:16,454 | app.py:228 | app_fit: losses_centralized [(0, 2.3872830867767334), (1, 35612.94921875), (2, 182143.359375), (3, 195039.375), (4, 2649199.75), (5, 4436417.5), (6, 4500008.0), (7, 4501809.5), (8, 4501835.5), (9, 4501831.5), (10, 4501837.0)]
+jax-FedAdaGrad-run | INFO flwr 2023-12-01 22:06:16,454 | app.py:229 | app_fit: metrics_centralized {'accuracy': [(0, 0.7261473536491394), (1, 0.6987268328666687), (2, 0.6735000014305115), (3, 0.6500534415245056), (4, 0.6284465193748474), (5, 0.6083829402923584), (6, 0.5897030830383301), (7, 0.572268545627594), (8, 0.5559588074684143), (9, 0.5406684279441833), (10, 0.5263047218322754)]}
