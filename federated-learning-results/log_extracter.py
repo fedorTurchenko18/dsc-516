@@ -109,7 +109,7 @@ import pandas as pd
 local_log_path = "."
 backends = ["jax", "tensorflow", "torch"]
 strategies = [ "FedAvg", "FedAdam", "FedAvgM","FedAdaGrad"]
-client_instances = ["2", "5"]
+client_instances = ["2", "5","8"]
 
 df = pd.DataFrame(columns=["strategy", "n_clients", "backend",'client_bool','client_num', "metric", "metric_value", "timestamp",'round'])
 
