@@ -2,7 +2,7 @@
 
 ## Description of Workflow Under `main.py`
 
-The following diagram reflects the algorithm which is being executed once the user runs `main.py`
+The following diagram reflects the algorithm which is being executed once the user runs `main.py`. Chat GPT was used in order to generate the scheme.
 
 <img src="https://snipboard.io/FhjbTr.jpg" alt="aws-credentials" width="300"/>
 
