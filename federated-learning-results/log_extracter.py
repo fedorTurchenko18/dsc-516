@@ -106,17 +106,10 @@ import re
 import math
 import pandas as pd
 
-<<<<<<< HEAD
-local_log_path = '.'
-backends = ['jax', 'tensorflow', 'torch']
-strategies = [ 'FedAvg', 'FedAdam', 'FedAvgM','FedAdaGrad']
-client_instances = ['2', '5', '8']
-=======
 local_log_path = "."
 backends = ["jax", "tensorflow", "torch"]
 strategies = [ "FedAvg", "FedAdam", "FedAvgM","FedAdaGrad"]
 client_instances = ["2", "5","8"]
->>>>>>> 578843da3713c3f7b632ebad194194ba2127c0ca
 
 df = pd.DataFrame(columns=['strategy', 'n_clients', 'backend','client_bool','client_num', 'metric', 'metric_value', 'timestamp','round'])
 
@@ -238,7 +231,7 @@ def add_fit_progress(element,backend, strategy, instance,client_instances,server
     # print(before_parenthesis)
     split_by_comma = before_parenthesis.split(',')
     round_1 = split_by_comma[0]
-    print(round_1)
+    # print(round_1)
     loss = split_by_comma[1]
     # print(loss)
     right_of_dict = split_by_comma[2]
